@@ -3,7 +3,7 @@
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ site.url }}{{ site.baseurl }}" class="logo"><!--strong>{{ site.title-bold }}</strong--> <img src="{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.header-logo }}" alt="" /> <span>{{ site.title-normal }}</span></a>
+	<a href="{{ site.url }}{{ site.baseurl }}" class="logo"><!--strong>{{ site.title-bold }}</strong--> <img src="{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.header-logo }}" alt="{{ site.title-bold }}" height="100%" /> <span>{{ site.title-normal }}</span></a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
