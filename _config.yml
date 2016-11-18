@@ -1,0 +1,50 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title-bold: Synengco
+title-normal: Automated Engineering
+email: webmaster@synengco.com
+description: Automated Engineering
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://synergetic-engineering.github.io" # the base hostname & protocol for your site
+author: 
+street_address: 5/28 Gladstone Rd
+city: Brisbane
+state: QLD
+zip_code: 4101
+country: Australia
+phone: +617 3229 3333
+
+# Plugins
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jemoji
+
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages" 
+tiles-count: 6
+
+# Social settings
+500px_url: 
+facebook_url: https://www.facebook.com/pages/Synengco-Pty-Ltd/473918309370363
+github_url: https://github.com/Synergetic-Engineering
+googleplus_url: https://plus.google.com/+SynengcoBrisbane
+instagram_url: 
+linkedin_url: https://www.linkedin.com/company/synengco
+pinterest_url: 
+slack_url: 
+twitter_url: 
+
+# Build settings
+markdown: kramdown
+
+# Plugin: jekyll-seo-tag
+logo:
+google_site_verification: 
