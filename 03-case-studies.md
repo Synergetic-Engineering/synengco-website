@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cast studies
+title: Case studies
 ---
 
 <!-- Main -->
