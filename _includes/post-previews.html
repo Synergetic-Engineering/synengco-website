@@ -1,0 +1,13 @@
+<section id="two">
+	{% for post in site.posts limit:site.post-limit %}
+	<div class="inner">
+		<header class="major">
+			<h2>{{ post.title }}</h2>
+		</header>
+		<p>{{ post.description }}</p>
+		<ul class="actions">
+			<li><a href="{{ site.baseurl }}{{ post.url }}" class="button next">Read More</a></li>
+		</ul>
+	</div>
+	{% endfor %}
+</section>

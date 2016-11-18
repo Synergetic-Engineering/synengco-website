@@ -32,6 +32,9 @@ gems:
 tiles-source: posts # accepts "posts" or "pages"
 tiles-count: 6
 
+# Blog post preview
+post-limit: 3
+
 # Social settings
 500px_url:
 facebook_url: https://www.facebook.com/pages/Synengco-Pty-Ltd/473918309370363
@@ -49,3 +52,7 @@ markdown: kramdown
 # Plugin: jekyll-seo-tag
 logo:
 google_site_verification:
+
+# Sass
+sass:
+  sass_dir: assets/sass
