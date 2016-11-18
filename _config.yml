@@ -12,13 +12,14 @@ email: webmaster@synengco.com
 description: Automated Engineering
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://synergetic-engineering.github.io" # the base hostname & protocol for your site
-author: 
-street_address: 5/28 Gladstone Rd
+author:
+street_address: Unit 5 / 28 Gladstone Rd
 city: Brisbane
 state: QLD
 zip_code: 4101
 country: Australia
 phone: +617 3229 3333
+header-logo: logo_horizontal_white_small.png
 
 # Plugins
 gems:
@@ -28,23 +29,23 @@ gems:
   - jemoji
 
 # Homepage tiles
-tiles-source: posts # accepts "posts" or "pages" 
+tiles-source: posts # accepts "posts" or "pages"
 tiles-count: 6
 
 # Social settings
-500px_url: 
+500px_url:
 facebook_url: https://www.facebook.com/pages/Synengco-Pty-Ltd/473918309370363
 github_url: https://github.com/Synergetic-Engineering
 googleplus_url: https://plus.google.com/+SynengcoBrisbane
-instagram_url: 
+instagram_url:
 linkedin_url: https://www.linkedin.com/company/synengco
-pinterest_url: 
-slack_url: 
-twitter_url: 
+pinterest_url:
+slack_url:
+twitter_url:
 
 # Build settings
 markdown: kramdown
 
 # Plugin: jekyll-seo-tag
 logo:
-google_site_verification: 
+google_site_verification:

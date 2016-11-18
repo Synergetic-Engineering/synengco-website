@@ -1,11 +1,12 @@
 ---
 layout: home
 title: Home
-landing-title: Synengco
-description:
-image: 
-author: 
-nav-menu: 
+landing-title: Helping people do more for less
+description: Using real-time analytics and decision support
+call-to-action: Find out more
+image:
+author:
+nav-menu:
 ---
 
 <!-- Banner -->
@@ -15,9 +16,9 @@ nav-menu:
 			<h1>{{ page.landing-title }}</h1>
 		</header>
 		<div class="content">
-			<p style="text-transform: uppercase;">{{ site.description }}</p>
+			<p style="text-transform: uppercase;">{{ page.description }}</p>
 			<ul class="actions">
-				<li><a href="#one" class="button next scrolly">Get Started</a></li>
+				<li><a href="#one" class="button next scrolly">{{ page.call-to-action }}</a></li>
 			</ul>
 		</div>
 	</div>
@@ -43,4 +44,3 @@ nav-menu:
 </section>
 
 </div>
-
