@@ -1,6 +1,9 @@
 <section id="two">
+<div class="inner">
+	<header class="major">
+		<h1>Recent blog posts</h1>
+	</header>
 	{% for post in site.posts limit:site.post-limit %}
-	<div class="inner">
 		<header class="major">
 			<h2>{{ post.title }}</h2>
 		</header>
@@ -8,6 +11,7 @@
 		<ul class="actions">
 			<li><a href="{{ site.baseurl }}{{ post.url }}" class="button next">Read More</a></li>
 		</ul>
-	</div>
 	{% endfor %}
+	<a href="{{ site.baseurl }}blog">See all blog posts</a>
+</div>
 </section>
