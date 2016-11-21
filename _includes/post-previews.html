@@ -4,13 +4,13 @@
 		<h2>Recent blog posts</h2>
 	</header>
 	{% for post in site.posts limit:site.post-limit %}
-		<header class="major">
-			<a href="{{ site.baseurl }}{{ post.url }}"><h3>{{ post.title }}</h3></a>
-		</header>
-		<p>{{ post.description }}</p>
-		<ul class="actions">
-			<li><a href="{{ site.baseurl }}{{ post.url }}" class="button next">Read More</a></li>
-		</ul>
+		<div>
+			<a href="{{ site.baseurl }}{{ post.url }}"><img style="float:left; margin-right:10px; margin-left:10px" src="{{ site.baseurl }}/{{ post.image-small }}" alt="{{ post.title }}" /></a>
+			<div>
+				<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+				<p>{{ post.description }}</p>
+			</div>
+		</div>
 	{% endfor %}
 	<a href="{{ site.baseurl }}blog">See all blog posts</a>
 </div>

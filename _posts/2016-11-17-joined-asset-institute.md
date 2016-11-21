@@ -4,7 +4,8 @@ title:  "We've joined the Asset Institute"
 description: "Synengco has joined the Asset Institute as the first SME solution provider"
 date:   2016-11-17 10:20:24 +1000
 image: assets/images/pic01.jpg
-categories: asset-institute
+image-small: assets/images/pic02small.jpg
+categories: asset-institute asset-management
 ---
 
 Synengco and the Asset Institute have been working together for quite some time
