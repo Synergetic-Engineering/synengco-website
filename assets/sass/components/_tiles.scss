@@ -25,16 +25,17 @@
 				'-webkit-filter 1s ease'
 			));
 			@include padding(4em, 4em);
+
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			cursor: default;
-			height: 40vh;
-			max-height: 40em;
-			min-height: 23em;
+			height: 30vh;
+			max-height: 25em;
+			min-height: 10em;
 			overflow: hidden;
 			position: relative;
-			width: 40%;
+			width: 60%;
 
 			.image {
 				display: none;
@@ -65,6 +66,7 @@
 				z-index: 4;
 			}
 
+
 			&:before {
 				@include vendor('transition', 'opacity 0.5s ease');
 				bottom: 0;
@@ -76,6 +78,7 @@
 				position: absolute;
 				width: 100%;
 				z-index: 2;
+
 			}
 
 			&:after {
@@ -104,7 +107,7 @@
 
 			&:nth-child(4n - 1),
 			&:nth-child(4n - 2) {
-				width: 60%;
+				width: 40%;
 			}
 
 			&:nth-child(6n - 5) {
@@ -148,8 +151,8 @@
 			article {
 				@include padding(4em, 3em);
 				height: 30vh;
-				max-height: 30em;
-				min-height: 20em;
+				max-height: 20em;
+				min-height: 10em;
 			}
 		}
 
@@ -162,7 +165,7 @@
 		@include breakpoint(small) {
 			article {
 				@include padding(3em, 1.5em);
-				height: 16em;
+				height: 10em;
 				max-height: none;
 				min-height: 0;
 
@@ -176,7 +179,7 @@
 			display: block;
 
 			article {
-				height: 20em;
+				height: 10em;
 				width: 100% !important;
 			}
 		}
