@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Capability framework
+title: Building your capabilities
 description: Model, Monitor, Predict, Optimise.
-permalink: /capability-framework/
+permalink: /core-capabilities/
 image: assets/images/pic02.jpg
 ---
 
