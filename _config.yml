@@ -19,7 +19,8 @@ state: QLD
 zip_code: 4101
 country: Australia
 phone: +617 3229 3333
-header-logo: logo_horizontal_white_small.png
+header-logo-white: logo_horizontal_white_small.png
+header-logo-colour: logo_horizontal_colour_small.png
 
 # Plugins
 gems:
