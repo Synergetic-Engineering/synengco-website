@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: Helping people do more for less
+landing-title: Helping you do more for less
 description: Using real-time analytics and decision support
 call-to-action: Find out more
 image:
