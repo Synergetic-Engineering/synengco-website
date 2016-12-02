@@ -8,9 +8,9 @@
 # Site settings
 title: Synengco
 title-bold: Synengco
-title-normal: Automated Engineering
+title-normal: Delivering what's possible
 email: webmaster@synengco.com
-description: Automated Engineering
+description: Delivering what's possible
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://synergetic-engineering.github.io" # the base hostname & protocol for your site
 author:
@@ -19,6 +19,7 @@ city: Brisbane
 state: QLD
 zip_code: 4101
 country: Australia
+location: Synengco,+Highgate+Hill,+Queensland
 phone: +617 3229 3333
 header-logo-white: logo_horizontal_white_small.png
 header-logo-colour: logo_horizontal_colour_small.png

@@ -2,6 +2,7 @@
 layout: page
 title: Case studies
 permalink: /case-studies/
+image: assets/images/redsky.jpg
 ---
 
 <!-- Main -->

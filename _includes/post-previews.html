@@ -5,11 +5,9 @@
 	</header>
 	{% for post in site.posts limit:site.post-limit %}
 		<div>
-			<a href="{{ site.baseurl }}{{ post.url }}"><img style="float:left; margin-right:10px; margin-left:10px" src="{{ site.baseurl }}/{{ post.image-small }}" alt="{{ post.title }}" /></a>
-			<div>
-				<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-				<p>{{ post.description }}</p>
-			</div>
+			<a href="{{ site.baseurl }}{{ post.url }}"><img style="float:left; width: 72px; margin-right:10px; margin-left:10px" src="{{ site.baseurl }}/{{ post.image-small }}" alt="{{ post.title }}" /></a>
+			<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+			<p>{{ post.description }}</p>
 		</div>
 	{% endfor %}
 	<a href="{{ site.baseurl }}blog">See all blog posts</a>
