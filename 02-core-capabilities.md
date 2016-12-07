@@ -3,7 +3,7 @@ layout: page
 title: Building your capabilities
 description: Model, Monitor, Predict, Optimise.
 permalink: /core-capabilities/
-image: assets/images/tools.jpg
+image: assets/images/redsky.jpg
 ---
 
 We build four core capabilities within oranisations: Model, Monitor, Predict, Optimise.

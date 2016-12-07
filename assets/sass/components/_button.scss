@@ -111,11 +111,11 @@
 		&.special {
 			background-color: _palette(fg-bold);
 			box-shadow: none;
-			color: _palette(bg);
+			color: _palette(primary-bg);
 
 			&:hover, &:active {
 				background-color: _palette(highlight);
-				color: _palette(bg) !important;
+				color: _palette(primary-bg) !important;
 			}
 
 			&:active {

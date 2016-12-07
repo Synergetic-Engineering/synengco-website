@@ -7,7 +7,7 @@
 	$duration: (
 		menu:				0.35s,
 		transition:			0.2s,
-		banner:				2.5s
+		banner:				1.0s
 	);
 
 // Size.
@@ -30,18 +30,37 @@
 
 // Palette.
 	$palette: (
-		bg:					#004268,
-		bg-alt:				#002235,
+		primary-bg: 		#004268,
+		primary-bg-alt: 	#D9E3E8,
+		primary-fg: 		#ffffff,
+		primary-fg-bold: 	#ffffff,
+		primary-fg-alt: 	#004268,
+
+		secondary-bg: 		#ffffff,
+		secondary-bg-alt: 	#004268,
+		secondary-fg: 		#004268,
+		secondary-fg-bold: 	#004268,
+		secondary-fg-alt: 	#ffffff,
+
+		contact-bg:			#004268, // 002235
+		footer-bg:			#004268, // 002235
+
+		bg:					#002235,
+		bg-alt: 			#D9E3E8,
+		bg2:				#ffffff,
 		fg:					#ffffff,
+		fg-alt:				#002235,
 		fg-bold:			#ffffff,
 		fg-light:			rgba(244,244,255,0.2),
 		border:				rgba(212,212,255,0.1),
 		border-bg:			rgba(212,212,255,0.035),
+
 		highlight:			#7cd4e1,
-		accent1:			#52C6D8,
-		accent2:			#ffcc4e,
-		accent3:			#ff4e81,
-		accent4:			#6dc067,
-		accent5:			#676dc0,
-		accent6:			#469a40
+		accent1:			#004268, // primary dark blue
+		accent2:			#ffcc4e, // orange
+		accent3:			#52C6D8, // light blue
+		accent4:			#6dc067, // green
+		accent5:			#676dc0, // purple
+		accent6:			#469a40  // darker green
+
 	);
