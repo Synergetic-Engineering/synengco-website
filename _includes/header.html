@@ -15,13 +15,9 @@
 <!-- Menu -->
 <nav id="menu">
 	<ul class="links">
-        {% for page in site.pages %}
-		    {% if page.layout == "home" %}
-		        <li><a href="{{ page.url | prepend: site.baseurl | remove: "index.html" }}">Home</a></li>
-	    	{% endif %}
-		{% endfor %}
+        <li><a href="{{ page.url | prepend: site.baseurl | remove: "index.html" }}">Home</a></li>
 		{% for page in site.pages %}
-		    {% if page.layout != "home" %}
+		    {% if page.in_menu %}
 		        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}

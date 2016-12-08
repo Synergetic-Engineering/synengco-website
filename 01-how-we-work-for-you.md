@@ -4,6 +4,7 @@ title: How we work for you
 description: Achieve sustainable improvements
 permalink: /how-we-work-for-you/
 image: assets/images/ocean.jpg
+in_menu: true
 ---
 
 At Synengco, we are passionate about reducing waste. We do this by amplifying the efforts of people that can make a difference.
