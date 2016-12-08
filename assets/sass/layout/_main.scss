@@ -6,6 +6,10 @@
 
 /* Main */
 
+	.edit-github {
+		float: right;
+	}
+
 	#main {
 		@include set-palette(background-color, '_palette()', bg);
 		@include set-palette(border-bottom, 'solid 1px _palette()', border);

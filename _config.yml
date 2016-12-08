@@ -24,6 +24,9 @@ phone: +617 3229 3333
 header-logo-white: logo_horizontal_white_small.png
 header-logo-colour: logo_horizontal_colour_small.png
 
+github-organisation: Synergetic-Engineering
+git-repo: synengco-website
+
 # Plugins
 gems:
   - jekyll-sitemap
