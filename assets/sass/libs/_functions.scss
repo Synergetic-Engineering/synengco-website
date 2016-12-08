@@ -49,7 +49,8 @@
 	$secondary-val: str-replace($val, '_palette()', _palette(#{$colkey}, secondary, $alpha));
 
 	#{$var}: #{$primary-val};
-	#secondary & {#{$var}: #{$secondary-val};}
+	&.secondary, {#{$var}: #{$secondary-val};}
+	.secondary & {#{$var}: #{$secondary-val};}
 }
 
 

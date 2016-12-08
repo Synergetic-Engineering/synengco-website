@@ -17,9 +17,9 @@
 
 		&.alt {
 			&:before {
-				background-color: _palette(fg-bold);
+				@include set-palette(background-color, '_palette()', fg-bold);
 				border-radius: 100%;
-				color: _palette(bg);
+				@include set-palette(color, '_palette()', bg);
 				display: inline-block;
 				height: 2em;
 				line-height: 2em;
@@ -37,13 +37,13 @@
 
 			&:hover {
 				&:before {
-					background-color: _palette(highlight);
+					@include set-palette(background-color, '_palette()', highlight);
 				}
 			}
 
 			&:active {
 				&:before {
-					background-color: desaturate(darken(_palette(highlight), 15), 5);
+					@include set-palette(background-color, 'desaturate(darken(_palette(), 15), 5)', highlight);
 				}
 			}
 		}

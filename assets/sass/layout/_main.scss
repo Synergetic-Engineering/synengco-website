@@ -6,100 +6,138 @@
 
 /* Main */
 
-	#primary {
-		background-color: _palette(bg);
-		color: _palette(fg);
-		border-bottom: solid 0px _palette(border);
-		h1, h2, h3, h4, h5, h6 {
-			color: _palette(fg-bold);
+	#main {
+		@include set-palette(background-color, '_palette()', bg);
+		@include set-palette(border-bottom, 'solid 1px _palette()', border);
+		&.secondary {
+			border-bottom-width: 1px;
 		}
 
-		header {
-			&.major {
-				> :first-child {
-					&:after {
-						background-color: _palette(fg);
-					}
-				}
-			}
-		}
+ 		> * {
+			@include set-palette(border-top, 'solid 1px _palette()', border);
 
-		> * {
-			border-top: solid 1px _palette(border);
+ 			&:first-child {
+ 				border-top: 0;
+ 			}
 
-			&:first-child {
-				border-top: 0;
-			}
+ 			@include inner;
+ 		}
 
-			@include inner;
-		}
+ 		&.alt, & .alt {
+				@include set-palette(background-color, '_palette()', bg-alt);
+				@include set-palette(color, '_palette()', fg-alt);
+				@include set-palette(border-bottom, 'solid 1px _palette()', border);
+		 		h1, h2, h3, h4, h5, h6 {
+					@include set-palette(color, '_palette()', fg-alt);
+		 		}
 
-		&.alt {
-			background-color: _palette(bg-alt);
-			color: _palette(fg-alt);
-			border-bottom: solid 1px _palette(border);
-			h1, h2, h3, h4, h5, h6 {
-				color: _palette(fg-alt);
-			}
-
-			header {
-				&.major {
-					> :first-child {
-						&:after {
-							background-color: _palette(fg-alt);
-						}
-					}
-				}
-			}
-
-		}
+		 		header {
+		 			&.major {
+		 				> :first-child {
+		 					&:after {
+								@include set-palette(background-color, '_palette()', fg-alt);
+		 					}
+		 				}
+		 			}
+		 		}
+ 		}
 	}
 
-	#secondary {
-		background-color: _palette(bg, secondary);
-		color: _palette(fg, secondary);
-		border-bottom: solid 1px _palette(border);
-		h1, h2, h3, h4, h5, h6 {
-			color: _palette(fg-bold, secondary);
-		}
 
-		header {
-			&.major {
-				> :first-child {
-					&:after {
-						background-color: _palette(fg, secondary);
-					}
-				}
-			}
-		}
 
-		> * {
-			border-top: solid 1px _palette(border);
-
-			&:first-child {
-				border-top: 0;
-			}
-
-			@include inner;
-		}
-
-		&.alt {
-			background-color: _palette(bg-alt, secondary);
-			color: _palette(fg-alt, secondary);
-			border-bottom: solid 1px _palette(border);
-			h1, h2, h3, h4, h5, h6 {
-				color: _palette(fg-alt, secondary);
-			}
-
-			header {
-				&.major {
-					> :first-child {
-						&:after {
-							background-color: _palette(fg-alt, secondary);
-						}
-					}
-				}
-			}
-
-		}
-	}
+	// 	background-color: _palette(bg);
+	// 	color: _palette(fg);
+	// 	border-bottom: solid 0px _palette(border);
+	// 	h1, h2, h3, h4, h5, h6 {
+	// 		color: _palette(fg-bold);
+	// 	}
+	//
+	// 	header {
+	// 		&.major {
+	// 			> :first-child {
+	// 				&:after {
+	// 					background-color: _palette(fg);
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	//
+	// 	> * {
+	// 		border-top: solid 1px _palette(border);
+	//
+	// 		&:first-child {
+	// 			border-top: 0;
+	// 		}
+	//
+	// 		@include inner;
+	// 	}
+	//
+	// 	&.alt {
+	// 		background-color: _palette(bg-alt);
+	// 		color: _palette(fg-alt);
+	// 		border-bottom: solid 1px _palette(border);
+	// 		h1, h2, h3, h4, h5, h6 {
+	// 			color: _palette(fg-alt);
+	// 		}
+	//
+	// 		header {
+	// 			&.major {
+	// 				> :first-child {
+	// 					&:after {
+	// 						background-color: _palette(fg-alt);
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	//
+	// 	}
+	// }
+	//
+	// #secondary {
+	// 	background-color: _palette(bg, secondary);
+	// 	color: _palette(fg, secondary);
+	// 	border-bottom: solid 1px _palette(border);
+	// 	h1, h2, h3, h4, h5, h6 {
+	// 		color: _palette(fg-bold, secondary);
+	// 	}
+	//
+	// 	header {
+	// 		&.major {
+	// 			> :first-child {
+	// 				&:after {
+	// 					background-color: _palette(fg, secondary);
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	//
+	// 	> * {
+	// 		border-top: solid 1px _palette(border);
+	//
+	// 		&:first-child {
+	// 			border-top: 0;
+	// 		}
+	//
+	// 		@include inner;
+	// 	}
+	//
+	// 	&.alt {
+	// 		background-color: _palette(bg-alt, secondary);
+	// 		color: _palette(fg-alt, secondary);
+	// 		border-bottom: solid 1px _palette(border);
+	// 		h1, h2, h3, h4, h5, h6 {
+	// 			color: _palette(fg-alt, secondary);
+	// 		}
+	//
+	// 		header {
+	// 			&.major {
+	// 				> :first-child {
+	// 					&:after {
+	// 						background-color: _palette(fg-alt, secondary);
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	//
+	// 	}
+	//}

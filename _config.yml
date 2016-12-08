@@ -35,8 +35,15 @@ gems:
 tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 4
 
-# Blog post preview
-post-limit: 3
+# Blog settings
+post-limit: 3 # post-preview
+authors:
+    sam:
+        name: Sam Patterson
+        image: sam.jpg
+    don:
+        name: Don Sands
+        image: don.jpg
 
 # Social settings
 500px_url:

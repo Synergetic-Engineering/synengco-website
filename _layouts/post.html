@@ -14,7 +14,7 @@
 
 
 <!-- Main -->
-<div id="secondary">
+<div id="main" class="secondary">
 
 <!-- One -->
 <section id="one">
@@ -23,7 +23,11 @@
 			<h1>{{ page.title }}</h1>
 		</header>
 		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		<p>{{ content }}</p>
+        <i>By {{ site.authors[page.author]["name"] }} on {{ page.date | date: '%B %d, %Y' }}</i>. tags:
+            {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/tags/{{tag}}/">{{ tag }}</a> &nbsp
+            {% endfor %}
+        <p>{{ content }}</p>
 	</div>
 </section>
 

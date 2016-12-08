@@ -6,7 +6,7 @@ image: assets/images/sky.jpg
 ---
 
 <!-- Main -->
-<div id="main" class="alt">
+<div id="main">
 
 <!-- One -->
 <section id="one">

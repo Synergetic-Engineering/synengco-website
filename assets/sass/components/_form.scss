@@ -179,7 +179,6 @@
 
 		&:focus + label {
 			&:before {
-				box-shadow: 0 0 0 2px _palette(highlight);
 				@include set-palette(box-shadow, '0 0 0 2px _palette()', highlight);
 			}
 		}

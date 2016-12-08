@@ -29,13 +29,9 @@ nav-menu:
 <div id="main">
 
 <!-- One -->
-<div id="primary">
 {% include tiles.html %}
-</div>
 
 <!-- Two -->
-<div id="primary" class="alt">
 {% include post-previews.html %}
-</div>
 
 </div>
