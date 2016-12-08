@@ -20,11 +20,39 @@
 }
 
 /// Gets a palette value.
-/// @param {string} $keys Key(s).
+/// @param {string} $key Colour key.
+/// @param {string} $name Palette name.
+/// @param {string} $alpha Alpha.
 /// @return {string} Value.
-@function _palette($keys...) {
-	@return val($palette, $keys...);
+
+@function _palette(
+  	$key,
+	$pname: 'primary',
+  	$alpha: null
+	) {
+  	$colour: null;
+  	$colour-map: map-get($palette, $pname);
+  	@if $colour-map {
+    	$colour: map-get($colour-map, $key);
+  	}
+
+  	$alpha: if(type-of($alpha) == 'number', $alpha, map-get($opacity, $alpha));
+  	@if $alpha {
+    	$colour: rgba($colour, $alpha);
+  	}
+
+  	@return $colour;
 }
+
+@mixin set-palette($var, $val, $colkey, $alpha: null) {
+	$primary-val: str-replace($val, '_palette()', _palette(#{$colkey}, primary, $alpha));
+	$secondary-val: str-replace($val, '_palette()', _palette(#{$colkey}, secondary, $alpha));
+
+	#{$var}: #{$primary-val};
+	#secondary & {#{$var}: #{$secondary-val};}
+}
+
+
 
 /// Gets a size value.
 /// @param {string} $keys Key(s).

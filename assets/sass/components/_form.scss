@@ -7,6 +7,7 @@
 /* Form */
 
 	form {
+
 		margin: 0 0 _size(element-margin) 0;
 
 		.field {
@@ -61,7 +62,7 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
+		@include set-palette(color, '_palette()', fg-bold);
 		display: block;
 		font-size: 0.8em;
 		font-weight: _font(weight-bold);
@@ -77,7 +78,7 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
+		@include set-palette(background, '_palette()', border-bg);
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -92,8 +93,8 @@
 		}
 
 		&:focus {
-			border-color: _palette(highlight);
-			box-shadow: 0 0 0 2px _palette(highlight);
+			@include set-palette(border-color, '_palette()', highlight);
+			@include set-palette(box-shadow, '0 0 0 2px _palette()', highlight);
 		}
 	}
 
@@ -103,7 +104,7 @@
 		position: relative;
 
 		&:before {
-			color: _palette(border);
+			@include set-palette(color, '_palette()', border);
 			content: '\f078';
 			display: block;
 			height: _size(element-height);
@@ -144,7 +145,7 @@
 
 		& + label {
 			@include icon;
-			color: _palette(fg);
+			@include set-palette(color, '_palette()', fg);
 			cursor: pointer;
 			display: inline-block;
 			font-weight: _font(weight);
@@ -153,7 +154,7 @@
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
+				@include set-palette(background, '_palette()', border-bg);
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);
@@ -169,16 +170,17 @@
 
 		&:checked + label {
 			&:before {
-				background: _palette(fg-bold);
-				border-color: _palette(highlight);
+				@include set-palette(background, '_palette()', fg-bold);
+				@include set-palette(border-color, '_palette()', highlight);
 				content: '\f00c';
-				color: _palette(primary-bg);
+				@include set-palette(color, '_palette()', bg);
 			}
 		}
 
 		&:focus + label {
 			&:before {
 				box-shadow: 0 0 0 2px _palette(highlight);
+				@include set-palette(box-shadow, '0 0 0 2px _palette()', highlight);
 			}
 		}
 	}
@@ -199,26 +201,26 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
+		@include set-palette(color, '_palette() !important', fg-light);
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: _palette(fg-light) !important;
+		@include set-palette(color, '_palette() !important', fg-light);
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: _palette(fg-light) !important;
+		@include set-palette(color, '_palette() !important', fg-light);
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
+		@include set-palette(color, '_palette() !important', fg-light);
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: _palette(fg-light) !important;
+		@include set-palette(color, '_palette() !important', fg-light);
 		opacity: 1.0;
 	}

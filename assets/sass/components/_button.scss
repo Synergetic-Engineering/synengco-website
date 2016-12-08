@@ -20,8 +20,8 @@
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px _palette(fg-bold);
-		color: _palette(fg-bold);
+		@include set-palette(box-shadow, 'inset 0 0 0 2px _palette()', fg-bold);
+		@include set-palette(color, '_palette()', fg-bold);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -36,14 +36,14 @@
 		white-space: nowrap;
 
 		&:hover, &:active {
-			box-shadow: inset 0 0 0 2px _palette(highlight);
-			color: _palette(highlight);
+			@include set-palette(box-shadow, 'inset 0 0 0 2px _palette()', highlight);
+			@include set-palette(color, '_palette()', highlight);
 		}
 
 		&:active {
-			background-color: transparentize(_palette(highlight), 0.9);
-			box-shadow: inset 0 0 0 2px desaturate(darken(_palette(highlight), 15), 5);
-			color: desaturate(darken(_palette(highlight), 15), 5);
+			@include set-palette(background-color, 'transparentize(_palette(), 0.9)', highlight);
+			@include set-palette(box-shadow, 'inset 0 0 0 2px desaturate(darken(_palette(), 15), 5)', highlight);
+			@include set-palette(color, 'desaturate(darken(_palette(), 15), 5)', highlight);
 		}
 
 		&.icon {
@@ -88,11 +88,11 @@
 			}
 
 			&:before {
-				background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg-bold)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+				@include set-palette(background-image, 'svg-url(\'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: _palette(); stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>\')', fg-bold);
 			}
 
 			&:after {
-				background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(highlight)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+				@include set-palette(background-image, 'svg-url(\'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: _palette(); stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>\')', highlight);
 				opacity: 0;
 				z-index: 1;
 			}
@@ -109,17 +109,17 @@
 		}
 
 		&.special {
-			background-color: _palette(fg-bold);
+			@include set-palette(background-color, '_palette()', fg-bold);
 			box-shadow: none;
-			color: _palette(primary-bg);
+			@include set-palette(color, '_palette()', bg);
 
 			&:hover, &:active {
-				background-color: _palette(highlight);
-				color: _palette(primary-bg) !important;
+				@include set-palette(background-color, '_palette()', highlight);
+				@include set-palette(color, '_palette() !important', bg);
 			}
 
 			&:active {
-				background-color: desaturate(darken(_palette(highlight), 15), 5);
+				@include set-palette(background-color, 'desaturate(darken(_palette(), 15), 5)', highlight);
 			}
 		}
 

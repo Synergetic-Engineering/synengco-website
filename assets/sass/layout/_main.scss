@@ -7,18 +7,18 @@
 /* Main */
 
 	#primary {
-		background-color: _palette(primary-bg);
-		color: _palette(primary-fg);
+		background-color: _palette(bg);
+		color: _palette(fg);
 		border-bottom: solid 0px _palette(border);
 		h1, h2, h3, h4, h5, h6 {
-			color: _palette(primary-fg-bold);
+			color: _palette(fg-bold);
 		}
 
 		header {
 			&.major {
 				> :first-child {
 					&:after {
-						background-color: _palette(primary-fg);
+						background-color: _palette(fg);
 					}
 				}
 			}
@@ -35,18 +35,18 @@
 		}
 
 		&.alt {
-			background-color: _palette(primary-bg-alt);
-			color: _palette(primary-fg-alt);
+			background-color: _palette(bg-alt);
+			color: _palette(fg-alt);
 			border-bottom: solid 1px _palette(border);
 			h1, h2, h3, h4, h5, h6 {
-				color: _palette(primary-fg-alt);
+				color: _palette(fg-alt);
 			}
 
 			header {
 				&.major {
 					> :first-child {
 						&:after {
-							background-color: _palette(primary-fg-alt);
+							background-color: _palette(fg-alt);
 						}
 					}
 				}
@@ -56,18 +56,18 @@
 	}
 
 	#secondary {
-		background-color: _palette(secondary-bg);
-		color: _palette(secondary-fg);
+		background-color: _palette(bg, secondary);
+		color: _palette(fg, secondary);
 		border-bottom: solid 1px _palette(border);
 		h1, h2, h3, h4, h5, h6 {
-			color: _palette(secondary-fg-bold);
+			color: _palette(fg-bold, secondary);
 		}
 
 		header {
 			&.major {
 				> :first-child {
 					&:after {
-						background-color: _palette(secondary-fg);
+						background-color: _palette(fg, secondary);
 					}
 				}
 			}
@@ -84,18 +84,18 @@
 		}
 
 		&.alt {
-			background-color: _palette(secondary-bg-alt);
-			color: _palette(secondary-fg-alt);
+			background-color: _palette(bg-alt, secondary);
+			color: _palette(fg-alt, secondary);
 			border-bottom: solid 1px _palette(border);
 			h1, h2, h3, h4, h5, h6 {
-				color: _palette(secondary-fg-alt);
+				color: _palette(fg-alt, secondary);
 			}
 
 			header {
 				&.major {
 					> :first-child {
 						&:after {
-							background-color: _palette(secondary-fg-alt);
+							background-color: _palette(fg-alt, secondary);
 						}
 					}
 				}
