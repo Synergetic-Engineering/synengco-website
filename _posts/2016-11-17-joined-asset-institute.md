@@ -8,7 +8,7 @@ image-small: assets/images/asset_institute_icon.png
 tags: asset-institute asset-management
 ---
 
-Synengco and the [Asset Institute](http://assetinstitute.com/) have been working together for quite some time now, first with their predecessor CIEAM (Collaborative Research Centre for Infrastructure and Engineering Asset Management). When we heard that they have implemented a new membership type geared towards small to medium enterprises like ourselves, we jumped at the opportunity to [sign up](http://assetinstitute.com/become-a-member/).
+Synengco and the [Asset Institute](http://assetinstitute.com/){:target="_blank"} have been working together for quite some time now, first with their predecessor CIEAM (Collaborative Research Centre for Infrastructure and Engineering Asset Management). When we heard that they have implemented a new membership type geared towards small to medium enterprises like ourselves, we jumped at the opportunity to [sign up](http://assetinstitute.com/become-a-member/){:target="_blank"}.
 
 The Asset Institute is a translational research institute based at Queensland University of Technology in Brisbane, Queensland, Australia. They have a wide variety of members, large and small from industry and research.
 
