@@ -63,8 +63,9 @@ twitter_url:
 markdown: kramdown
 
 # Plugin: jekyll-seo-tag
-logo:
-google_site_verification:
+logo: assets/images/logo_stacked_colour.png
+google_site_verification: OvCpS4DYRKl4cch-bc2uLYgNOXbPwMGCHv9gFHBp_iM
+google-analytics: UA-88744504-1
 
 # Sass
 sass:
