@@ -16,13 +16,13 @@ Many of our clients have benefited from applying [SentientSystem](www.sentientsy
 
 ### Early Warning
 
-Another popular offering of ours is configuring [SentientSystem](www.sentientsystem.com){:target="_blank"} for early w warning and detection of faults on our client's plant. By using the hybrid fundamental engineering model + emperical data models, the real-time predictive capability that client's gain allows them to be notified of subtle issues well before they turn into big problems.
+Another popular offering of ours is configuring [SentientSystem](www.sentientsystem.com){:target="_blank"} for early w warning and detection of faults on our client's plant. By using the hybrid fundamental engineering model + empirical data models, the real-time predictive capability that client's gain allows them to be notified of subtle issues well before they turn into big problems.
 
 ## Oil and Gas
 
 For the past 5 years we've been providing monitoring and early-warning in the oil and gas industry for compressor stations and gas-fired power stations with a lot of success. By operationalising the work of engineers in real-time, we are able to identify opportunities and issues quickly at a very low cost.
 
-On top of our on-going offering to clients in the area, we've recently been configuring [SentientSystem](www.sentientsystem.com){:target="_blank"} to provide real-time monitoring and optimisation for wells and pumps, specifically within the coal seam gas industry. Drawing upon our existing work in the area, we been working on some experiments with real data from the field with some promising results. It is always nice to know that our offering translates to other parts of the value stream, and our team loves learning the intracacies of new processes, systems and problems.
+On top of our on-going offering to clients in the area, we've recently been configuring [SentientSystem](www.sentientsystem.com){:target="_blank"} to provide real-time monitoring and optimisation for wells and pumps, specifically within the coal seam gas industry. Drawing upon our existing work in the area, we been working on some experiments with real data from the field with some promising results. It is always nice to know that our offering translates to other parts of the value stream, and our team loves learning the intricacies of new processes, systems and problems.
 
 <!--- ### Modelling a Positive Cavity Pump (PCP)
 
