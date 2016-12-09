@@ -14,6 +14,6 @@ The Asset Institute is a translational research institute based at Queensland Un
 
 The Asset Institute develops new approaches to define and achieve best-practice economic, environmental and social performance. With the ability to connect private and public asset owners and operators, governments, development partners and aid agencies with a world-class, international network of multidisciplinary research organisations and industry bodies, the Asset Institute aims to make not only a positive difference to the field of asset management by providing collaborative research services, solutions and training, but also to achieve public benefit—making a positive difference to community livelihoods by improving the sustainability and increasing the usefulness of human created assets and infrastructure.
 
-Their kind welcoming has much appreciated and we're well underway work with together on a number of promising projects in the area of health and government asset management.
+Their kind welcoming has been much appreciated and we're well underway work with together on a number of promising projects in the area of health and government asset management.
 
 
