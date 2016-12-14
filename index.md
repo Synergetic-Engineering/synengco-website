@@ -1,9 +1,10 @@
 ---
 layout: home
-title: Synengco - Delivering what's possible
+title: Synengco - Giving you time
 description: Using real-time analytics and decision support
-landing-title: Helping you do more for less
-landing-subtitle: Using real-time analytics and decision support
+landing-title: Helping you do more with less time
+landing-subtitle: By turning knowledge and data into quantified & prioritised actions
+#landing-subtitle: Using real-time analytics and decision support
 call-to-action: Find out more
 image: assets/images/logo_stacked_colour.png
 author:

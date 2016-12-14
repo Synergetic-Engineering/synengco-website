@@ -8,9 +8,9 @@
 # Site settings
 title: Synengco
 title-bold: Synengco
-title-normal: Delivering what's possible
+title-normal: Giving you time
 email: webmaster@synengco.com
-description: Delivering what's possible
+description: Giving you time
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://synergetic-engineering.github.io" # the base hostname & protocol for your site
 author:
