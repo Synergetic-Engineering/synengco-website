@@ -34,5 +34,8 @@
 					@include vendor('transition', 'none !important');
 				}
 			}
+	}
 
+	.hidden {
+		display: none;
 	}
