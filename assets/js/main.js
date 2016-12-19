@@ -274,7 +274,8 @@ var comments_table = null;
 							{ title: "Time" },
 							{ title: "Comment" }
 						],
-						lengthChange: false
+						lengthChange: false,
+						"order": [[ 1, 'asc' ]]
 					});
 
 			}
