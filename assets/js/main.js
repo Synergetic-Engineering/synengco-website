@@ -96,8 +96,6 @@ var comments_table = null;
 
 
 
-
-
 	/**
 	 * virtual-well demo Select2
 	 */
@@ -167,7 +165,6 @@ var comments_table = null;
 				console.log('new data', data)
 				$('#well-results').removeClass("hidden");
 				$('#well-update').removeClass("hidden");
-
 				// Update chart
 					series = [
 							{
@@ -283,6 +280,7 @@ var comments_table = null;
 			}
 		);
 	});
+
 
 	$(function() {
 
@@ -557,3 +555,4 @@ var comments_table = null;
 
 
 })(jQuery);
+

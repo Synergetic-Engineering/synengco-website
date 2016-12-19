@@ -44,7 +44,7 @@ permalink: /case-studies/oil-and-gas/virtual-well/
 <div id="well-update" class="hidden">
 	<hr/>
 	<h3>Add or update information</h3>
-	<form method="post" action="#">
+	<form id="well-update-form" method="post" action="#">
 		<div class="row uniform">
 			<div class="6u 12u$(xsmall)">
 				<label for="well-set-depth">Set Depth (m)</label>
