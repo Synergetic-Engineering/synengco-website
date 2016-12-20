@@ -18,8 +18,8 @@ permalink: /case-studies/oil-and-gas/virtual-well/
 <form method="post" action="#">
 	<div class="row uniform">
 		<div class="12u$">
-			<label for="well-name">Add or Load a Well</label>
-			<select name="well-name" class="select-wrapper select2-well-info"></select>
+			<label for="well-name">Select or Add an Asset</label>
+			<select name="well-name" class="select-wrapper select2-well-info" data-placeholder="Select or Add an Asset"></select>
 		</div>
 	</div>
 </form>
