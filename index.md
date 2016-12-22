@@ -2,7 +2,7 @@
 layout: home
 title: Synengco - Giving you time
 description: Using real-time analytics and decision support
-landing-title: Helping you do more with less time
+landing-title: Helping you do more in less time
 #landing-subtitle: By turning knowledge & data into quantified & prioritised actions
 landing-subtitle: Using real-time analytics and decision support
 call-to-action: Find out more
