@@ -97,26 +97,26 @@ var comments_table = null;
 
 
 	/**
-	 * virtual-well demo Select2
+	 * virtual-asset demo Select2
 	 */
 
-	function formatWells(well) {
-		if (well.loading) return well.text;
+	function formatAssets(asset) {
+		if (asset.loading) return asset.text;
 
 	    var markup = "<div class='secondary select2-formatrepo'>";
-		if (well.create_well) {
-			markup += "<div><i>Add</i> '" + well.name + "'</div>";
+		if (asset.create_asset) {
+			markup += "<div><i>Add</i> '" + asset.name + "'</div>";
 		} else { 
-	    	markup += "<div>" + well.name + "</div>";
+	    	markup += "<div>" + asset.name + "</div>";
 		}
 
-	    if (well.description) {
-	    	markup += "<div>" + well.createdAt + "</div>";
+	    if (asset.description) {
+	    	markup += "<div>" + asset.createdAt + "</div>";
 	    }
 
-		if (well.set_depth){
+		if (asset.set_depth){
 	    	markup += "<div>" +
-		     	"<div><i class='fa fa-flash'></i> Set Depth =" + well.set_depth + "</div>" +
+		     	"<div><i class='fa fa-flash'></i> Set Depth =" + asset.set_depth + "</div>" +
 		        "</div>";
 		}
 
@@ -125,14 +125,14 @@ var comments_table = null;
 	    return markup;
 	}
 
-	function formatSelection(well) {
-      	return well.name || well.text;
+	function formatSelection(asset) {
+      	return asset.name || asset.text;
     }
 
 
-	var $select2 = $(".select2-well-info").select2({
+	var $select2 = $(".select2-asset-info").select2({
 	   	ajax: {
-	    	url: "https://bjwk5fmzfb.execute-api.ap-southeast-2.amazonaws.com/dev/virtual-well",
+	    	url: "https://ip4gedzgcd.execute-api.ap-southeast-2.amazonaws.com/dev/virtual-asset",
 	     	dataType: 'json',
 	     	delay: 250,
 	     	data: function (params) {
@@ -152,7 +152,7 @@ var comments_table = null;
 						console.log(data[i]);
 						if (params.term == data[i].name) found = true;
 					}
-					if (!found) data.unshift({id: 'new', name: params.term, create_well: true})
+					if (!found) data.unshift({id: 'new', name: params.term, create_asset: true})
 				}
 		       	params.page = params.page || 1;
 		       	return {
@@ -166,7 +166,7 @@ var comments_table = null;
 	   	},
 	   	escapeMarkup: function (markup) { return markup; },
 	   	minimumInputLength: 0,
-	   	templateResult: formatWells,
+	   	templateResult: formatAssets,
 	   	templateSelection: formatSelection,
 		createSearchChoice : function (term) { console.log({id: term, text: term}); },
 		containerCssClass: "secondary",
@@ -431,10 +431,10 @@ var comments_table = null;
 
 				});
 
-		// Virtual Well Select2
+		// Virtual asset Select2
 		if (window.location.hash) {
-			var well_id = window.location.hash.substring(1);
-			$.get("https://bjwk5fmzfb.execute-api.ap-southeast-2.amazonaws.com/dev/virtual-well/" + well_id,
+			var asset_id = window.location.hash.substring(1);
+			$.get("https://ip4gedzgcd.execute-api.ap-southeast-2.amazonaws.com/dev/virtual-asset/" + asset_id,
 				function(data) {
 					$select2.select2("trigger", "select", {data: data});
 				}

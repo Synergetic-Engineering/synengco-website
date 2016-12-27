@@ -18,56 +18,56 @@ permalink: /case-studies/oil-and-gas/virtual-well/
 <form method="post" action="#">
 	<div class="row uniform">
 		<div class="12u$">
-			<label for="well-name">Select or Add an Asset</label>
-			<select name="well-name" class="select-wrapper select2-well-info" data-placeholder="Select or Add an Asset" style="width: 100%"></select>
+			<label for="asset-name">Select or Add an Asset</label>
+			<select name="asset-name" class="select-wrapper select2-asset-info" data-placeholder="Select or Add an Asset" style="width: 100%"></select>
 		</div>
 	</div>
 </form>
 
-<div id="well-results" class="hidden">
+<div id="asset-results" class="hidden">
 	<hr/>
 	<h3>Well information</h3>
-	<div id="well-process">
+	<div id="asset-process">
 		<strong>Latest operation</strong>
 		<table id="latest-operation" class="display" width="100%"></table>
 	</div>
-	<div id="well-trend">
+	<div id="asset-trend">
 		<strong>Recent history</strong>
 		<div class="ct-chart ct-double-octave"></div>
 	</div>
-	<div id="well-comment-history" class="table-wrapper">
+	<div id="asset-comment-history" class="table-wrapper">
 		<strong>Comments</strong>
 		<table id="comments" class="display" width="100%"></table>
 	</div>
 </div>
 
-<div id="well-update" class="hidden">
+<div id="asset-update" class="hidden">
 	<hr/>
 	<h3>Add or update information</h3>
-	<form id="well-update-form" method="post" action="#">
+	<form id="asset-update-form" method="post" action="#">
 		<div class="row uniform">
 			<div class="6u 12u$(xsmall)">
-				<label for="well-set-depth">Set Depth (m)</label>
-				<input type="text" name="well-set-depth" id="well-set-depth" value="" placeholder="Set depth of PC Pump in metres" />
+				<label for="asset-set-depth">Set Depth (m)</label>
+				<input type="text" name="asset-set-depth" id="asset-set-depth" value="" placeholder="Set depth of PC Pump in metres" />
 			</div>
 			<!-- Break -->
 			<div class="6u$ 12u$(xsmall)">
-				<label for="well-capacity">Bottom Hole Pressure (kPa)</label>
-				<input type="email" name="well-capacity" id="well-capacity" value="" placeholder="Pressure at PC pump entry in kPa" />
+				<label for="asset-capacity">Bottom Hole Pressure (kPa)</label>
+				<input type="email" name="asset-capacity" id="asset-capacity" value="" placeholder="Pressure at PC pump entry in kPa" />
 			</div>
 			<!-- Break -->
 			<div class="6u 12u$(xsmall)">
-				<label for="well-username">Name</label>
-				<input type="text" name="well-username" id="well-username" value="" placeholder="Enter your name" />
+				<label for="asset-username">Name</label>
+				<input type="text" name="asset-username" id="asset-username" value="" placeholder="Enter your name" />
 			</div>
 			<div class="6u 12u$(xsmall)">
-				<label for="well-comment">Comment</label>
-				<textarea name="well-comment" id="well-comment" placeholder="Enter a comment about this well" rows="1"></textarea>
+				<label for="asset-comment">Comment</label>
+				<textarea name="asset-comment" id="asset-comment" placeholder="Enter a comment about this well" rows="1"></textarea>
 			</div>
 			<!-- Break -->
 			<div class="6u$ 12u$(small)">
-				<input type="checkbox" id="well-use-current-time" name="well-use-current-time" checked>
-				<label for="well-use-current-time">Use current time</label>
+				<input type="checkbox" id="asset-use-current-time" name="asset-use-current-time" checked>
+				<label for="asset-use-current-time">Use current time</label>
 			</div>
 			<!-- Break -->
 			<div class="12u$">
