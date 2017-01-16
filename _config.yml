@@ -12,7 +12,7 @@ title-normal: Giving you time
 email: webmaster@synengco.com
 description: Giving you time
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://synergetic-engineering.github.io" # the base hostname & protocol for your site
+url: "http://synengco.com" # the base hostname & protocol for your site
 author:
 street_address: Unit 5 / 28 Gladstone Rd
 city: Brisbane
