@@ -12,7 +12,7 @@ Synengco was founded out of the experience and learnings from a combined experie
 
 ### Soot Blowing
 
-Many of our clients have benefited from applying [SentientSystem](www.sentientsystem.com){:target="_blank"} for real-time optimisation of their soot blowing schedule. In all cases, our payback period has been under 12 months, most of which were less than 6 months.
+Many of our power generation clients have benefited from applying [SentientSystem](www.sentientsystem.com){:target="_blank"} for real-time optimisation of their soot blowing schedule. In all cases, our payback period has been under 12 months, most of which were less than 6 months.
 
 ### Early Warning
 
