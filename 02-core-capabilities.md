@@ -7,7 +7,7 @@ image: assets/images/redsky.jpg
 in_menu: true
 ---
 
-We build four core capabilities within oranisations: Model, Monitor, Predict, Optimise.
+We build four core capabilities within organisations: Model, Monitor, Predict, Optimise.
 
 Each of these work together to automate routine analysis and tasks to give more time to people.
 
