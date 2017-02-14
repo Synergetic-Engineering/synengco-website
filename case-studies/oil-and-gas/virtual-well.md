@@ -5,7 +5,7 @@ permalink: /case-studies/oil-and-gas/virtual-well/
 ---
 
 <div class="box">
-	<strong>Empowered by <a href="http://www.sentientsystem.com" target="_blank">SentientSystem's</a> Asset Management Collaborative Platform</strong>
+	<strong>Empowered by <a href="http://sentientsystem.com" target="_blank">SentientSystem's</a> Asset Management Collaborative Platform</strong>
 	<ul>
 		<li>Add a new well or collaborate on an existing well</li>
 		<li>Enter information and knowledge about the well</li>
