@@ -14,7 +14,7 @@ description: Giving you time
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://synengco.com" # the base hostname & protocol for your site
 author:
-street_address: Unit 5 / 28 Gladstone Rd
+street_address: 28E Gladstone Rd
 city: Brisbane
 state: QLD
 zip_code: 4101
