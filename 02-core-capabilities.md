@@ -27,4 +27,4 @@ With some fundamental knowledge and historical data about an operation, we can s
 
 ## Optimisation
 
-The monitoring and prediction gives us a great understanding of where the operation is now and where it can go. From here we can start applying optimisation techinques to make and sustain significant improvements.
+The monitoring and prediction gives us a great understanding of where the operation is now and where it can go. From here we can start applying optimisation techniques to make and sustain significant improvements.
