@@ -65,15 +65,22 @@ permalink: /case-studies/oil-and-gas/virtual-well/
 				<textarea name="asset-comment" id="asset-comment" placeholder="Enter a comment about this well" rows="1"></textarea>
 			</div>
 			<!-- Break -->
-			<div class="6u$ 12u$(small)">
+			<!--div class="6u$ 12u$(small)">
 				<input type="checkbox" id="asset-use-current-time" name="asset-use-current-time" checked>
 				<label for="asset-use-current-time">Use current time</label>
-			</div>
+			</div-->
 			<!-- Break -->
 			<div class="12u$">
 				<ul class="actions">
 					<li><input type="submit" value="Submit" class="special" /></li>
 					<li><input type="reset" value="Reset" /></li>
+				</ul>
+			</div>
+			<!-- Break -->
+			<div class="12u$">
+				<ul class="actions">
+					<li><input type="submit" value="Bulk upload (Excel/CSV)" /></li>
+					<li><input type="submit" value="Download history (Excel/CSV)" /></li>
 				</ul>
 			</div>
 		</div>
