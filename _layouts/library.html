@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+
+<!-- Main -->
+<div id="main" class="secondary">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>{{ page.title }}</h1>
+		</header>
+		<div>
+			{% assign thispagepurl = page.url | remove: "index.html"  %}
+			{% assign thispagehierarchy = thispagepurl | split: "/"  %}
+			{% assign thispagelevel = thispagehierarchy | size | minus: 2 %}
+			{% capture purls %}{% for p in site.sentientsystem-library %}{% assign purl = p.url | remove: "index.html" | strip %}{{purl}}|{% endfor %}{% endcapture %}
+			{% assign purls = purls | split: '|' | sort %}
+			{% for purl in purls %}
+				{% for p in site.sentientsystem-library %}
+					{% assign prettyurl = p.url | remove: "index.html" | strip %}
+					{% unless p.url == page.url or purl == "" or purl != prettyurl %}
+						{% assign hierarchy = prettyurl | split: "/"  %}
+						{% assign level = hierarchy | size | minus: 2 %}
+						{% if level > thispagelevel and prettyurl contains thispagepurl %}
+							<div style="margin-left: {{ level | minus: thispagelevel | minus: 1 | times: 0.5 }}cm">
+                                <h{{level | minus: thispagelevel}}><a href="{{ prettyurl }}">{{ p.title }}</a></h{{level | minus: thispagelevel}}>
+                            </div>
+							{% comment %}<p>{{p.description}}</p>{% endcomment %}
+						{% endif %}
+					{% endunless %}
+				{% endfor %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+</div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

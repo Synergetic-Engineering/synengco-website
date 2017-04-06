@@ -27,6 +27,11 @@ header-logo-colour: logo_horizontal_colour_small.png
 github-organisation: Synergetic-Engineering
 git-repo: synengco-website
 
+collections:
+    sentientsystem-library:
+        output: true
+
+
 # Plugins
 gems:
   - jekyll-sitemap
