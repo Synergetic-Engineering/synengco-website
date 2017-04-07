@@ -47,7 +47,7 @@ children:
 <td><strong>Output Tags</strong></td>
 </tr>
 <tr class="row-even"><td>Sent Out Heat Rate</td>
-<td>ASME PTC 4, 6 &amp;</td>
+<td>ASME PTC 4 &amp; 6</td>
 <td>.efficiency.net.heatrate</td>
 </tr>
 <tr class="row-odd"><td>Generated Heat Rate</td>
