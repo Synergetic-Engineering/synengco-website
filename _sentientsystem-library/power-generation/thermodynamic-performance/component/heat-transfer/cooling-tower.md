@@ -41,20 +41,20 @@ description: Cooling tower component
 <h2>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline"></a></h2>
 <p><strong>Approach Temperature</strong></p>
 <div class="math">
-<p><span class="math">T_{approach} = T_{cwout} - T_{wb}</span></p>
+<p><span class="math">$$T_{approach} = T_{cwout} - T_{wb}$$</span></p>
 </div><p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">.approach.use = .c1out.prop.temp.use - .c2in.prop.wetBulb.use</span></p>
+<p><span class="math">$$.approach.use = .c1out.prop.temp.use - .c2in.prop.wetBulb.use$$</span></p>
 </div><p><strong>Range</strong></p>
 <div class="math">
-<p><span class="math">T_{range} = T_{cwin} - T_{cwout}</span></p>
+<p><span class="math">$$T_{range} = T_{cwin} - T_{cwout}$$</span></p>
 </div><p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">.c1.dT.use = .c1in.prop.temp.use - .c1out.prop.temp.use</span></p>
+<p><span class="math">$$.c1.dT.use = .c1in.prop.temp.use - .c1out.prop.temp.use$$</span></p>
 </div><p><strong>Utility</strong></p>
 <div class="math">
-<p><span class="math">Util = \frac{T_{range}}{T_{cwin} - T_{wb}}</span></p>
+<p><span class="math">$$Util = \frac{T_{range}}{T_{cwin} - T_{wb}}$$</span></p>
 </div><p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">.util.use = \frac{T_{range}}{T_{cwin} - T_{wb}}</span></p>
+<p><span class="math">$$.util.use = \frac{T_{range}}{T_{cwin} - T_{wb}}$$</span></p>
 </div></div>

@@ -40,42 +40,42 @@ description: Generator component
 <h2>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline"></a></h2>
 <p><strong>Cooling Water Range</strong></p>
 <div class="math">
-<p><span class="math">T_{r} = T_{cwout} - T_{cwin}</span></p>
+<p><span class="math">$$T_{r} = T_{cwout} - T_{cwin}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">T_{r}</span> = Generator cooling water range temperature <span class="math">(^{0}C)</span></li>
-<li><span class="math">T_{cwout}</span> = Generator cooling water outlet temperature <span class="math">(^{0}C)</span></li>
-<li><span class="math">T_{cwin}</span> = Generator cooling water inlet temperature <span class="math">(^{0}C)</span></li>
+<li><span class="math">$T_{r}$</span> = Generator cooling water range temperature <span class="math">$(^{0}C)$</span></li>
+<li><span class="math">$T_{cwout}$</span> = Generator cooling water outlet temperature <span class="math">$(^{0}C)$</span></li>
+<li><span class="math">$T_{cwin}$</span> = Generator cooling water inlet temperature <span class="math">$(^{0}C)$</span></li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">gen.c3.dT.use = gen.c3out.prop.temp.use - gen.c3in.prop.temp.use</span></p>
+<p><span class="math">$$gen.c3.dT.use = gen.c3out.prop.temp.use - gen.c3in.prop.temp.use$$</span></p>
 </div><p>The generator efficiency is determined by fitting a second order polynomial to
 the generator efficiency design data, where:</p>
 <p><strong>Generator Loss</strong></p>
 <p>The generator Loss:</p>
 <div class="math">
-<p><span class="math">Loss = aQ_{GEN}^{2} + bQ_{GEN} + c</span></p>
+<p><span class="math">$$Loss = aQ_{GEN}^{2} + bQ_{GEN} + c$$</span></p>
 </div><p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">turb.gen.c4out.energyFlow.use = aturb.gen.c2out.energyFlow.use^{2} + bturb.gen.c2out.energyFlow.use + c</span></p>
+<p><span class="math">$$turb.gen.c4out.energyFlow.use = aturb.gen.c2out.energyFlow.use^{2} + bturb.gen.c2out.energyFlow.use + c$$</span></p>
 </div><p><strong>Efficiency</strong></p>
 <p>The Generator Efficiency is determined by:</p>
 <div class="math">
-<p><span class="math">\eta_{GEN} = \frac {Q_{GEN}} {Mechanical Energy In}</span></p>
+<p><span class="math">$$\eta_{GEN} = \frac {Q_{GEN}} {Mechanical Energy In}$$</span></p>
 </div><p>In CAS Terms:</p>
 <div class="math">
-<p><span class="math">.efficiency.use = \frac{.c2out.energyFlow.use}{.c2in.energyFlow.use}</span></p>
+<p><span class="math">$$.efficiency.use = \frac{.c2out.energyFlow.use}{.c2in.energyFlow.use}$$</span></p>
 </div><p><strong>Power Factor</strong></p>
 <p>The power factor is determined by if not available from the plant:</p>
 <div class="math">
-<p><span class="math">PF = \frac{Q_{GEN}}{Q_{GEN} + Q_{reactive}}</span></p>
+<p><span class="math">$$PF = \frac{Q_{GEN}}{Q_{GEN} + Q_{reactive}}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">PF</span> = Power factor</li>
-<li><span class="math">Q_{reactive}</span> = Generator reactive power</li>
+<li><span class="math">$PF$</span> = Power factor</li>
+<li><span class="math">$Q_{reactive}$</span> = Generator reactive power</li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">.powerFactor.use = \frac{.c2out.energyFlow.use}{.c2out.energyFlow.use + .reactivePower.use}</span></p>
+<p><span class="math">$$.powerFactor.use = \frac{.c2out.energyFlow.use}{.c2out.energyFlow.use + .reactivePower.use}$$</span></p>
 </div></div>

@@ -85,51 +85,51 @@ the generator.  It is usually expressed in kJ/kWhr and varies with load.</p>
 voltage), and Units Sent Out (USO:  includes auxiliary energy).  To convert Heat
 Rate to efficiency you use the formula:</p>
 <div class="math">
-<p><span class="math">HR = \frac{3600}{\eta}</span></p>
+<p><span class="math">$$HR = \frac{3600}{\eta}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">\eta</span> = efficiency (%)</li>
+<li><span class="math">$\eta$</span> = efficiency (%)</li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">efficiency.gross.heatrate = \frac{3600}{efficiency.gross.use}</span></p>
+<p><span class="math">$$efficiency.gross.heatrate = \frac{3600}{efficiency.gross.use}$$</span></p>
 </div><p><strong>Generator Efficiency</strong></p>
 <p>To determine the overall unit efficiency you require the total energy extracted as
 electricity divided by the heat added to the boiler.  The gross efficiency as
 calculated below:</p>
 <div class="math">
-<p><span class="math">\eta _{GEN} = \frac{Q_{GEN}}{Q_{rF}}</span></p>
+<p><span class="math">$$\eta _{GEN} = \frac{Q_{GEN}}{Q_{rF}}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">Q_{GEN}</span> = Generated Output; and</li>
-<li><span class="math">Q_{rF}</span> = Fuel Input.</li>
+<li><span class="math">$Q_{GEN}$</span> = Generated Output; and</li>
+<li><span class="math">$Q_{rF}$</span> = Fuel Input.</li>
 </ul>
 <p>But as stated in PTC 46 Section 3.1.2.1, another method for determining boiler efficiency
 is via the “energy balance” method. This is considered to be more accurate as it doesn’t
 rely on mass flow measurement. changing the equation to:</p>
 <div class="math">
-<p><span class="math">\eta _{GEN} = Q_{GEN} \times \frac{\eta blr}{Qblrout}</span></p>
+<p><span class="math">$$\eta _{GEN} = Q_{GEN} \times \frac{\eta blr}{Qblrout}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">\eta blr</span> = blr efficiency by losses (%); and</li>
-<li><span class="math">Qblrout</span> = net boiler heat output (kW).</li>
+<li><span class="math">$ \eta blr $</span> = blr efficiency by losses (%); and</li>
+<li><span class="math">$Qblrout$</span> = net boiler heat output (kW).</li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">efficiency.gross.use = turb.gen.c2out.energyFlow.use \times \frac{blr.efficiency\_losses.use}{blr.netheatoutput.use}</span></p>
+<p><span class="math">$$efficiency.gross.use = turb.gen.c2out.energyFlow.use \times \frac{blr.efficiency\_losses.use}{blr.netheatoutput.use}$$</span></p>
 </div><p><strong>Sent Out Power</strong></p>
 <p>The sent out power as caculated is:</p>
 <div class="math">
-<p><span class="math">Q_{SO} = Q_{GEN} - Q_{AUX}</span></p>
+<p><span class="math">$$Q_{SO} = Q_{GEN} - Q_{AUX}$$</span></p>
 </div><p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">turb.gentrf.c2out.energyFlow.use = turb.gen.c2out.energyFlow.use - turb.auxPower.use</span></p>
+<p><span class="math">$$turb.gentrf.c2out.energyFlow.use = turb.gen.c2out.energyFlow.use - turb.auxPower.use$$</span></p>
 </div><p><strong>Turbine Auxillary Power</strong></p>
 <p>The turbo auxiliary power as calculated is:</p>
 <div class="math">
-<p><span class="math">Q_{AUX} = Q_{UNITAUX} + Q_{TRANLOSS}</span></p>
+<p><span class="math">$$Q_{AUX} = Q_{UNITAUX} + Q_{TRANLOSS}$$</span></p>
 </div><p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">turb.auxPower.use = unit \ auxiliaries + transformer \ losses</span></p>
+<p><span class="math">$$turb.auxPower.use = unit \ auxiliaries + transformer \ losses$$</span></p>
 </div><p>Transformer losses are considered to remain constant and are therfore not calculated.</p>
 </div>
