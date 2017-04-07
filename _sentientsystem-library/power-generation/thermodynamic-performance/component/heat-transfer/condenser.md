@@ -36,9 +36,9 @@ description: Condenser component
 <td>&nbsp;</td>
 <td>.c2.dQ.use</td>
 </tr>
-<tr class="row-even"><td>Thermal Conductance</td>
+<tr class="row-even"><td>Heat Transfer Coefficient</td>
 <td>&nbsp;</td>
-<td>.thermalConductance.use</td>
+<td>.heatTransferCoefficient.use</td>
 </tr>
 <tr class="row-odd"><td>TTD</td>
 <td>ASME PTC 12.2(6.9)</td>
@@ -79,19 +79,19 @@ cooling water and condensing steam (PTC 12.2 5.1.2).</p>
 <p>In CAS terms (where ”.” represents a condenser):</p>
 <div class="math">
 <p><span class="math">$$.ttd.use = .c1in.prop.satTemp.use - .c2out.prop.temp.use$$</span></p>
-</div><p><strong>Thermal Conductance</strong></p>
-<p>The condenser thermal conductance is:</p>
+</div><p><strong>Heat Transfer Coefficient</strong></p>
+<p>The condenser heat transfer coefficient is:</p>
 <div class="math">
-<p><span class="math">$$TC = \frac{Q_{stm}}{LMTD}$$</span></p>
+<p><span class="math">$$HTC = \frac{Q_{stm}}{LMTD}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
 <li><span class="math">$Q_{stm}$</span> = Heat flow from condensing steam (kW)</li>
 <li><span class="math">$LMTD$</span> = Log mean temperature difference <span class="math">$(^{o}C)$</span></li>
-<li><span class="math">$TC$</span> = thermal conductance <span class="math">$(kW/^{o}C)$</span></li>
+<li><span class="math">$HTC$</span> = heat transfer coefficient <span class="math">$(kW/^{o}C)$</span></li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">$$cond.thermalConductance.use = \frac{cond.c1.dQ.use}{cond.lmtd.use}$$</span></p>
+<p><span class="math">$$cond.heatTransferCoefficient.use = \frac{cond.c1.dQ.use}{cond.lmtd.use}$$</span></p>
 </div><p><strong>Condenser Cleanliness</strong></p>
 <p>The condenser cleanliness is determined by comparing the design Heat Transfer
 Co-efficient to the actual heat transfer co-efficient.</p>

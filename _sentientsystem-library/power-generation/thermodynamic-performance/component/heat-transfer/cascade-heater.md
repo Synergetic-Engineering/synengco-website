@@ -57,25 +57,25 @@ amongst both <cite>performance_cascade_heater</cite> and <cite>performance_heate
 <td>&nbsp;</td>
 <td>.desuperheater.c1.dQ.use</td>
 </tr>
-<tr class="row-odd"><td>Desuperheater - Thermal Conductance</td>
+<tr class="row-odd"><td>Desuperheater - Heat Transfer Coefficient</td>
 <td>&nbsp;</td>
-<td>.desuperheater.thermalConductance.use</td>
+<td>.desuperheater.heatTransferCoefficient.use</td>
 </tr>
 <tr class="row-even"><td>Condenser - Heat Transfer</td>
 <td>&nbsp;</td>
 <td>.condenser.c1.dQ.use</td>
 </tr>
-<tr class="row-odd"><td>Condenser - Thermal Conductance</td>
+<tr class="row-odd"><td>Condenser - Heat Transfer Coefficient</td>
 <td>&nbsp;</td>
-<td>.condenser.thermalConductance.use</td>
+<td>.condenser.heatTransferCoefficient.use</td>
 </tr>
 <tr class="row-even"><td>Drain Cooler - Heat Transfer</td>
 <td>&nbsp;</td>
 <td>.drainCooler.c1.dQ.use</td>
 </tr>
-<tr class="row-odd"><td>Drain Cooler - Thermal Conductance</td>
+<tr class="row-odd"><td>Drain Cooler - Heat Transfer Coefficient</td>
 <td>&nbsp;</td>
-<td>.drainCooler.thermalConductance.use</td>
+<td>.drainCooler.heatTransferCoefficient.use</td>
 </tr>
 </tbody>
 </table>
@@ -129,18 +129,18 @@ Heaters section 1.7).</p>
 <p>In CAS terms:</p>
 <div class="math">
 <p><span class="math">$$.LMTD.use = \frac{.c1.dT.use}{In\left ( \frac {.c2in.prop.satTemp.use - .c1in.prop.temp.use}{.c2in.prop.satTemp.use - .c1out.prop.temp.use} \right )}$$</span></p>
-</div><p><strong>Thermal Conductance</strong></p>
+</div><p><strong>Heat Transfer Coefficient</strong></p>
 <div class="math">
-<p><span class="math">$$TC = \frac{Q}{LMTD}$$</span></p>
+<p><span class="math">$$HTC = \frac{Q}{LMTD}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">$TC$</span> = Thermal conductance of heater (kW/<span class="math">$^{o}C$</span>)</li>
+<li><span class="math">$HTC$</span> = Heat transfer coefficient of heater (kW/<span class="math">$^{o}C$</span>)</li>
 <li><span class="math">$Q$</span> = Heat transferred from feedwater (kW)</li>
 <li><span class="math">$LMTD$</span> = Log mean temperature difference of heater <span class="math">$(^{o}C)$</span></li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">$$.thermalConductance.use = \frac{.c1.dQ.use}{.lmtd.use}$$</span></p>
+<p><span class="math">$$.heatTransferCoefficient.use = \frac{.c1.dQ.use}{.lmtd.use}$$</span></p>
 </div><p><strong>Terminal Temperature Difference</strong></p>
 <div class="math">
 <p><span class="math">$$TTD = T_{extsteam} - T_{fwout}$$</span></p>

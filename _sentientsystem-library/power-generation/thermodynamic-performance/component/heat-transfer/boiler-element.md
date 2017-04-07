@@ -23,9 +23,9 @@ description: Boiler element component
 <td>ASME PTC 12.2,S 6.9</td>
 <td>.LMTD.use</td>
 </tr>
-<tr class="row-odd"><td>Thermal Conductance</td>
+<tr class="row-odd"><td>Heat Transfer Coefficient</td>
 <td>&nbsp;</td>
-<td>.thermalConductance.use</td>
+<td>.heatTransferCoefficient.use</td>
 </tr>
 </tbody>
 </table>
@@ -52,20 +52,20 @@ description: Boiler element component
 </div><p>In CAS terms:</p>
 <div class="math">
 <p><span class="math">$$element.lmtd.use = \frac{(ob.c2in.prop.temp.use - ob.c2in.prop.temp.use) - (ob.c2out.prop.temp.use - ob.c1in.prop.temp.use)}{In \left ( \frac{ob.c2in.prop.temp.use - ob.c1out.prop.temp.use}{ob.c2out.prop.temp.use - ob.c1in.prop.temp.use} \right )}$$</span></p>
-</div><p><strong>Thermal Conductance</strong></p>
-<p>The thermal conductance is characterising parameter that incorporates the heat
+</div><p><strong>Heat Transfer Coefficient</strong></p>
+<p>The heat transfer coefficient is characterising parameter that incorporates the heat
 transfer coefficient and the geometry of the boiler elements and is defined as:</p>
 <div class="math">
-<p><span class="math">$$TC = \frac{Q}{\Delta T_{LM}}$$</span></p>
+<p><span class="math">$$HTC = \frac{Q}{\Delta T_{LM}}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">$TC$</span> = Thermal Conductance (kW/<span class="math">$^{o}C$</span>)</li>
+<li><span class="math">$HTC$</span> = Heat Transfer Coefficient (kW/<span class="math">$^{o}C$</span>)</li>
 <li><span class="math">$Q$</span> = Heat Flow from steam/gas (kW)</li>
 <li><span class="math">$\Delta T_{LM}$</span> = Log Mean Temperature Difference <span class="math">$(^{o}C)$</span></li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">$$element.thermalConductance.use = \frac{element.c1.dQ.use}{element.lmtd.use}$$</span></p>
+<p><span class="math">$$element.heatTransferCoefficient.use = \frac{element.c1.dQ.use}{element.lmtd.use}$$</span></p>
 </div><p>A comparison of the actual and design values together with the components
 historical values, will determine whether the boiler element is operating
 within an acceptable band from its design point.</p>
