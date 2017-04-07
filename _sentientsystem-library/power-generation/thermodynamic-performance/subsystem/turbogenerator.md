@@ -62,30 +62,30 @@ children:
 <p><strong>Net Heat Input</strong></p>
 <p>Net Heat input is calculated as</p>
 <div class="math">
-<p><span class="math">net \ heat \ input = Q_{MS} - Q_{FW} + Q_{HRH} - Q_{CRH} - Q_{RHS}</span></p>
+<p><span class="math">$$net \ heat \ input = Q_{MS} - Q_{FW} + Q_{HRH} - Q_{CRH} - Q_{RHS}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">Q_{MS}</span> = Heat Flow from Main Steam (kW) (blr.ms_1.energyFlow.use + blr.ms_r.energyFlow.use)</li>
-<li><span class="math">Q_{FW}</span> = Heat Flow from Feedwater (kW) (blr.fw_1.energyFlow.use + blr.fw_r.energyFlow.use)</li>
-<li><span class="math">Q_{HRH}</span> = Heat Flow to Hot Reheat (kW) (blr.hrh_1.energyFlow.use + blr.hrh_r.energyFlow.use)</li>
-<li><span class="math">Q_{CRH}</span> = Heat Flow from Cold Reheat (kW) (blr.crh_1.energyFlow.use + blr.crh_r.energyFlow.use)</li>
-<li><span class="math">Q_{RHS}</span> = Heat Flow from Reheat Sprays (kW) blr.rhs.energyFlow.use</li>
+<li><span class="math">$Q_{MS}$</span> = Heat Flow from Main Steam (kW) (blr.ms_1.energyFlow.use + blr.ms_r.energyFlow.use)</li>
+<li><span class="math">$Q_{FW}$</span> = Heat Flow from Feedwater (kW) (blr.fw_1.energyFlow.use + blr.fw_r.energyFlow.use)</li>
+<li><span class="math">$Q_{HRH}$</span> = Heat Flow to Hot Reheat (kW) (blr.hrh_1.energyFlow.use + blr.hrh_r.energyFlow.use)</li>
+<li><span class="math">$Q_{CRH}$</span> = Heat Flow from Cold Reheat (kW) (blr.crh_1.energyFlow.use + blr.crh_r.energyFlow.use)</li>
+<li><span class="math">$Q_{RHS}$</span> = Heat Flow from Reheat Sprays (kW) blr.rhs.energyFlow.use</li>
 </ul>
 <p>In CAS Terms:</p>
 <div class="math">
-<p><span class="math">ob.netheatinput.use =</span></p>
-</div><p><span class="math">\qquad ob.tcv.c1in.energyFlow.use - ob.hp6.c1out.energyFlow.use +</span></p>
-<p><span class="math">\qquad ob.n2Mixer.c1in.energyFlow.use - ob.s6.c1out.energyFlow.use - ob.s7.c2out.energyFlow.use</span></p>
+<p><span class="math">$$ob.netheatinput.use =$$</span></p>
+</div><p><span class="math">$$\qquad ob.tcv.c1in.energyFlow.use - ob.hp6.c1out.energyFlow.use +$$</span></p>
+<p><span class="math">$$\qquad ob.n2Mixer.c1in.energyFlow.use - ob.s6.c1out.energyFlow.use - ob.s7.c2out.energyFlow.use$$</span></p>
 <p><strong>Effectiveness</strong></p>
 <div class="math">
-<p><span class="math">e = \frac{\Delta h}{\Delta h + T_o \Delta s}</span></p>
+<p><span class="math">$$e = \frac{\Delta h}{\Delta h + T_o \Delta s}$$</span></p>
 </div><p><strong>Heat Rate</strong></p>
 <div class="math">
-<p><span class="math">HR = \frac{net \ heat \ to \ cycle}{output}</span></p>
+<p><span class="math">$$HR = \frac{net \ heat \ to \ cycle}{output}$$</span></p>
 </div><p><strong>Efficiency</strong></p>
 <div class="math">
-<p><span class="math">\eta = \frac{energy \ flow \ out}{net \ heat \ input}</span></p>
+<p><span class="math">$$\eta = \frac{energy \ flow \ out}{net \ heat \ input}$$</span></p>
 </div><p>In CAS Terms:</p>
 <div class="math">
-<p><span class="math">ob.efficiency.gross.use = ob.gen.c2out.energyFlow.use / ob.netheatinput.use</span></p>
+<p><span class="math">$$ob.efficiency.gross.use = ob.gen.c2out.energyFlow.use / ob.netheatinput.use$$</span></p>
 </div></div>

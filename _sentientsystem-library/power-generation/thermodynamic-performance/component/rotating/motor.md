@@ -31,14 +31,14 @@ description: Motor component
 <h2>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline"></a></h2>
 <p>The electrical power input to a motor is given by:</p>
 <div class="math">
-<p><span class="math">Q = \sqrt{3} \times V \times \iota \times cos\phi</span></p>
+<p><span class="math">$$Q = \sqrt{3} \times V \times \iota \times cos\phi$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">V</span> = Motor voltage</li>
-<li><span class="math">\iota</span> = Motor current</li>
-<li><span class="math">cos\phi</span> = Power factor</li>
+<li><span class="math">$V$</span> = Motor voltage</li>
+<li><span class="math">$\iota$</span> = Motor current</li>
+<li><span class="math">$cos\phi$</span> = Power factor</li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">.c1in.energyFlow.use = \frac{3**0.5 \times .volts.use \times .current.use \times .powerFactor.use}{1000}</span></p>
+<p><span class="math">$.c1in.energyFlow.use = \frac{3**0.5 \times .volts.use \times .current.use \times .powerFactor.use}{1000}$</span></p>
 </div></div>

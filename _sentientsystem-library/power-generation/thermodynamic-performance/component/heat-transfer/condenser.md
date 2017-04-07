@@ -58,108 +58,108 @@ description: Condenser component
 <p>The LMTD (Log Mean Temperature Difference) describes the mean temperature difference between
 cooling water and condensing steam (PTC 12.2 5.1.2).</p>
 <div class="math">
-<p><span class="math">LMTD_{cond} = \frac{T_{cwout} - T_{cwin}}{In\frac{T_{satsteamin} - T_{cwin}}{T_{satsteamin} - T_{cwout}}}</span></p>
+<p><span class="math">$$LMTD_{cond} = \frac{T_{cwout} - T_{cwin}}{In\frac{T_{satsteamin} - T_{cwin}}{T_{satsteamin} - T_{cwout}}}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">T_{cwout}</span> = Hot cooling water temperature <span class="math">(^{o}C)</span></li>
-<li><span class="math">T_{cwin}</span> = Cold cooling water temperature <span class="math">(^{o}C)</span></li>
-<li><span class="math">T_{satsteamin}</span> = Saturation temperature of condenser back pressure <span class="math">(^{o}C)</span></li>
+<li><span class="math">$T_{cwout}$</span> = Hot cooling water temperature <span class="math">(^{o}C)</span></li>
+<li><span class="math">$T_{cwin}$</span> = Cold cooling water temperature <span class="math">(^{o}C)</span></li>
+<li><span class="math">$T_{satsteamin}$</span> = Saturation temperature of condenser back pressure <span class="math">$(^{o}C)$</span></li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">cond.LMTD.use = \frac{cond.c2.dT.use}{In\frac{cond.c1in.prop.satTemp.use - cond.c2in.prop.temp.use}{cond.c1in.prop.satTemp.use - cond.c2out.prop.temp.use}}</span></p>
+<p><span class="math">$$cond.LMTD.use = \frac{cond.c2.dT.use}{In\frac{cond.c1in.prop.satTemp.use - cond.c2in.prop.temp.use}{cond.c1in.prop.satTemp.use - cond.c2out.prop.temp.use}}$$</span></p>
 </div><p><strong>TTD</strong></p>
 <p>The TTD (Terminal Temperature Difference) describes the heat transfer and the cleanliness of the heat exchange area.</p>
 <div class="math">
-<p><span class="math">TTD_{cond} = T_{satsteamin} - T_{cwout}</span></p>
+<p><span class="math">$$TTD_{cond} = T_{satsteamin} - T_{cwout}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">TTD_{cond}</span> = TTD condenser <span class="math">(^{o}C)</span></li>
+<li><span class="math">$TTD_{cond}$</span> = TTD condenser <span class="math">$(^{o}C)$</span></li>
 </ul>
 <p>In CAS terms (where ”.” represents a condenser):</p>
 <div class="math">
-<p><span class="math">.ttd.use = .c1in.prop.satTemp.use - .c2out.prop.temp.use</span></p>
+<p><span class="math">$$.ttd.use = .c1in.prop.satTemp.use - .c2out.prop.temp.use$$</span></p>
 </div><p><strong>Thermal Conductance</strong></p>
 <p>The condenser thermal conductance is:</p>
 <div class="math">
-<p><span class="math">TC = \frac{Q_{stm}}{LMTD}</span></p>
+<p><span class="math">$$TC = \frac{Q_{stm}}{LMTD}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">Q_{stm}</span> = Heat flow from condensing steam (kW)</li>
-<li><span class="math">LMTD</span> = Log mean temperature difference <span class="math">(^{o}C)</span></li>
-<li><span class="math">TC</span> = thermal conductance <span class="math">(kW/^{o}C)</span></li>
+<li><span class="math">$Q_{stm}$</span> = Heat flow from condensing steam (kW)</li>
+<li><span class="math">$LMTD$</span> = Log mean temperature difference <span class="math">$(^{o}C)$</span></li>
+<li><span class="math">$TC$</span> = thermal conductance <span class="math">$(kW/^{o}C)$</span></li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">cond.thermalConductance.use = \frac{cond.c1.dQ.use}{cond.lmtd.use}</span></p>
+<p><span class="math">$$cond.thermalConductance.use = \frac{cond.c1.dQ.use}{cond.lmtd.use}$$</span></p>
 </div><p><strong>Condenser Cleanliness</strong></p>
 <p>The condenser cleanliness is determined by comparing the design Heat Transfer
 Co-efficient to the actual heat transfer co-efficient.</p>
 <p>The actual heat transfer co-efficient (from water side) can be determined by
 (where ob = cond, PTC 12.2 5.1.2):</p>
 <div class="math">
-<p><span class="math">U_{meas} = \frac{Q_{cw}}{LMTD \times N_{tubes} \times L_{tubes} \times \pi \times D_{tube}}</span></p>
+<p><span class="math">$$U_{meas} = \frac{Q_{cw}}{LMTD \times N_{tubes} \times L_{tubes} \times \pi \times D_{tube}}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">U_{meas}</span> = Actual heat transfer co-efficient: <span class="math">\frac {kW}{(m^2)(^{o})C}</span></li>
-<li><span class="math">Q_{cw}</span> = Heat transfer from cooling water (kW)</li>
-<li><span class="math">N_{tubes}</span> = Number of tubes not plugged due to condenser leaks</li>
-<li><span class="math">L_{tubes}</span> = Length of tubes (m)</li>
-<li><span class="math">D_{tube}</span> = Outside diameter of tube (m)</li>
+<li><span class="math">$U_{meas}$</span> = Actual heat transfer co-efficient: <span class="math">$\frac {kW}{(m^2)(^{o})C}$</span></li>
+<li><span class="math">$Q_{cw}$</span> = Heat transfer from cooling water (kW)</li>
+<li><span class="math">$N_{tubes}$</span> = Number of tubes not plugged due to condenser leaks</li>
+<li><span class="math">$L_{tubes}$</span> = Length of tubes (m)</li>
+<li><span class="math">$D_{tube}$</span> = Outside diameter of tube (m)</li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">cond.heatTransferCoefficient.use = \frac{cond.c2.dQ.use}{cond.LMTD.use \times cond.numberOfTubes.use \times cond.tubeLength.use \times \pi \times cond.od.use}</span></p>
+<p><span class="math">$$cond.heatTransferCoefficient.use = \frac{cond.c2.dQ.use}{cond.LMTD.use \times cond.numberOfTubes.use \times cond.tubeLength.use \times \pi \times cond.od.use}$$</span></p>
 </div><p>The Design Heat Transfer (cond.heatTransferCoefficient.design) can be determined
 from HEI Steam Surface Condensers, Table 1):</p>
 <div class="math">
-<p><span class="math">Udesign = C1 \times C_{t} \times C_{m} \times C_{f}</span></p>
+<p><span class="math">$$Udesign = C1 \times C_{t} \times C_{m} \times C_{f}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">Udesign</span> = Design heat transfer co-efficient: <span class="math">\frac {kW}{m^2)}</span></li>
-<li><span class="math">C1</span> = Uncorrected heat transfer co-efficient: <span class="math">\frac {kW}{(m^2)(^{o})C}</span></li>
-<li><span class="math">C_{t}</span> = Cooling water inlet temperature correction factor <span class="math">(^{o}C)</span></li>
-<li><span class="math">C_{m}</span> = Tube metal correction factor <span class="math">(^{o} C)</span></li>
-<li><span class="math">C_{f}</span> = Design condenser cleanliness factor</li>
+<li><span class="math">$Udesign$</span> = Design heat transfer co-efficient: <span class="math">$\frac {kW}{m^2)}$</span></li>
+<li><span class="math">$C1$</span> = Uncorrected heat transfer co-efficient: <span class="math">$\frac {kW}{(m^2)(^{o})C}$</span></li>
+<li><span class="math">$C_{t}$</span> = Cooling water inlet temperature correction factor <span class="math">$(^{o}C)$</span></li>
+<li><span class="math">$C_{m}$</span> = Tube metal correction factor <span class="math">$(^{o} C)$</span></li>
+<li><span class="math">$C_{f}$</span> = Design condenser cleanliness factor</li>
 </ul>
 <p>In CAS terms (where ”.” is condenser):</p>
 <div class="math">
-<p><span class="math">cond.heatTransferCoefficient.design = .heatTransferCoefficient.uncorr \times .coldWaterCorrection.use \times .tubeWallCorrection.use</span></p>
+<p><span class="math">$$cond.heatTransferCoefficient.design = .heatTransferCoefficient.uncorr \times .coldWaterCorrection.use \times .tubeWallCorrection.use$$</span></p>
 </div><p>From (HEI Steam Surface Condensers, Table 1), the uncorrected Heat Transfer
 Co-efficient is defined as:</p>
 <div class="math">
-<p><span class="math">C1 = f(V_{tube})</span></p>
+<p><span class="math">$$C1 = f(V_{tube})$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">V_{tube}</span> = Velocity of condenser tubes <span class="math">(m/s)</span></li>
+<li><span class="math">$V_{tube}$</span> = Velocity of condenser tubes <span class="math">$(m/s)$</span></li>
 </ul>
 <p>Condenser Tube Velocity:</p>
 <div class="math">
-<p><span class="math">V_{tube} = \frac{VolFlow}{\pi\left ( \frac{ID}{2} \right )^{2} \times N_{tubes}}</span></p>
+<p><span class="math">$$V_{tube} = \frac{VolFlow}{\pi\left ( \frac{ID}{2} \right )^{2} \times N_{tubes}}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">VolFlow</span> = Volumetric flowrate of cooling water <span class="math">(m^{3}/s)</span></li>
-<li><span class="math">ID</span> = Inner diameter of tubes <span class="math">(m)</span></li>
-<li><span class="math">N_{tubes}</span> = Number of tubes</li>
+<li><span class="math">$VolFlow$</span> = Volumetric flowrate of cooling water <span class="math">(m^{3}/s)</span></li>
+<li><span class="math">$ID$</span> = Inner diameter of tubes <span class="math">$(m)$</span></li>
+<li><span class="math">$N_{tubes}$</span> = Number of tubes</li>
 </ul>
 <p>In CAS terms (where ”.” is a condenser):</p>
 <div class="math">
-<p><span class="math">.tubeVelocity.use = \frac{.c2in.volFlow.use}{\pi \times (\frac{.diameter.use}{2})^{2} \times .numberOfTubes.design}</span></p>
+<p><span class="math">$$.tubeVelocity.use = \frac{.c2in.volFlow.use}{\pi \times (\frac{.diameter.use}{2})^{2} \times .numberOfTubes.design}$$</span></p>
 </div><p>The inlet temperature correction (cond.coldWaterCorrection.use) can be approximated
 by the following function (interpolation from PTC):</p>
 <div class="math">
-<p><span class="math">C_{t} = A0 + T \times A1 + T^{2} \times A2 + T^{3} \times A3 + T^{4} \times A4 + T^{5} \times A5</span></p>
+<p><span class="math">$$C_{t} = A0 + T \times A1 + T^{2} \times A2 + T^{3} \times A3 + T^{4} \times A4 + T^{5} \times A5$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">T</span> = Cooling water inlet temperature <span class="math">(^{o}C)</span></li>
-<li><span class="math">A0</span> = 0.57497</li>
-<li><span class="math">A1</span> = 2.126449E-02</li>
-<li><span class="math">A2</span> = 6.906916E-04</li>
-<li><span class="math">A3</span> = 5.824107E-05</li>
-<li><span class="math">A4</span> = 1.265904Q-06</li>
-<li><span class="math">A5</span> = -9.136189E-09</li>
+<li><span class="math">$T$</span> = Cooling water inlet temperature <span class="math">$(^{o}C)$</span></li>
+<li><span class="math">$A0$</span> = 0.57497</li>
+<li><span class="math">$A1$</span> = 2.126449E-02</li>
+<li><span class="math">$A2$</span> = 6.906916E-04</li>
+<li><span class="math">$A3$</span> = 5.824107E-05</li>
+<li><span class="math">$A4$</span> = 1.265904Q-06</li>
+<li><span class="math">$A5$</span> = -9.136189E-09</li>
 </ul>
-<p>A correction factor (<span class="math">C_{t}</span>, cond.tupeWallCorrection Factor.use) for the
+<p>A correction factor (<span class="math">$C_{t}$</span>, cond.tupeWallCorrection Factor.use) for the
 tube wall thickness and material construction is required and a table of
 corrections is shown below (from HEI Steam Surface Condensers - Table 3).</p>
 <table border="1" class="docutils">
@@ -562,46 +562,46 @@ corrections is shown below (from HEI Steam Surface Condensers - Table 3).</p>
 </div></blockquote>
 <p><strong>Figure 1: Condenser Tube Construction Correction Factors (FM)</strong></p>
 <div class="math">
-<p><span class="math">U_{design} = C1 \times C_{t} \times C_{m}</span></p>
+<p><span class="math">$$U_{design} = C1 \times C_{t} \times C_{m}$$</span></p>
 </div><p>In CAS terms (where ”.” is condenser):</p>
 <p>Cleanliness Factor is the ratio of the condenser heat transfer co-efficient to
 the clean (design) heat transfer co-efficient:</p>
 <div class="math">
-<p><span class="math">\frac{U_{meas}}{U_{design}}</span></p>
+<p><span class="math">$$\frac{U_{meas}}{U_{design}}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">U_{meas}</span> = Heat transfer co-efficient from cooling water heat flow <span class="math">(kW/m^{2})</span></li>
+<li><span class="math">$U_{meas}$</span> = Heat transfer co-efficient from cooling water heat flow <span class="math">$(kW/m^{2})$</span></li>
 </ul>
 <p>In CAS terms (where ”.” is condenser):</p>
 <div class="math">
-<p><span class="math">.cleanlinessFactor.use = 100 \times \frac{.heatTransferCoefficient.use}{.heatTransferCoefficient.design}</span></p>
+<p><span class="math">$$.cleanlinessFactor.use = 100 \times \frac{.heatTransferCoefficient.use}{.heatTransferCoefficient.design}$$</span></p>
 </div><p><strong>Cooling Water Range</strong></p>
 <p>The cooling water range is the temperature rise in the condenser cooling water
 and is defined as:</p>
 <div class="math">
-<p><span class="math">T_{r} = T_{out} - T_{in}</span></p>
+<p><span class="math">$$T_{r} = T_{out} - T_{in}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">T_{r}</span> = Cooling water range <span class="math">(^{o}C)</span></li>
-<li><span class="math">T_{out}</span> = Condenser cooling water outlet temperature <span class="math">(^{o}C)</span></li>
-<li><span class="math">T_{in}</span> = Condenser cooling water inlet temperature <span class="math">(^{o}C)</span></li>
+<li><span class="math">$T_{r}$</span> = Cooling water range <span class="math">$(^{o}C)$</span></li>
+<li><span class="math">$T_{out}$</span> = Condenser cooling water outlet temperature <span class="math">$(^{o}C)$</span></li>
+<li><span class="math">$T_{in}$</span> = Condenser cooling water inlet temperature <span class="math">$(^{o}C)$</span></li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">cond.c2.dT.use = c2out.prop.temp.use - cond.c2in.prop.temp.use</span></p>
+<p><span class="math">$$cond.c2.dT.use = c2out.prop.temp.use - cond.c2in.prop.temp.use$$</span></p>
 </div><p><strong>Condenser Sub Cooling</strong></p>
 <p>Condenser sub-cooling is the difference between the saturated steam temperature
 of the condenser back-pressure and the temperature of the hotwell.  It is an
 indication of too much cooling in the condenser defined as:</p>
 <div class="math">
-<p><span class="math">T_{s} = T_{sat} - T_{hw}</span></p>
+<p><span class="math">$$T_{s} = T_{sat} - T_{hw}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">T_{s}</span> = Sub cooling temperature <span class="math">(^{o}C)</span></li>
-<li><span class="math">T_{sat}</span> = Saturation steam temperature at condenser back pressure <span class="math">(^{o}C)</span></li>
-<li><span class="math">T_{hw}</span> = Hotwell temperature <span class="math">(^{o}C)</span></li>
+<li><span class="math">$T_{s}$</span> = Sub cooling temperature <span class="math">$(^{o}C)$</span></li>
+<li><span class="math">$T_{sat}$</span> = Saturation steam temperature at condenser back pressure <span class="math">$(^{o}C)$</span></li>
+<li><span class="math">$T_{hw}$</span> = Hotwell temperature <span class="math">$(^{o}C)$</span></li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">cond.subCooling.use = cond.c1in.prop.satTemp.use - cond.c1out.prop.temp.use</span></p>
+<p><span class="math">$$cond.subCooling.use = cond.c1in.prop.satTemp.use - cond.c1out.prop.temp.use$$</span></p>
 </div></div>

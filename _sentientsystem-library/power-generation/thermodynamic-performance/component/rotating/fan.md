@@ -34,27 +34,27 @@ description: Fan component
 <p><strong>Efficiency</strong></p>
 <p>The static fan efficiency is defined as:</p>
 <div class="math">
-<p><span class="math">\eta = 100 \times \frac{P \times M}{\rho \times Q_{elec}}</span></p>
+<p><span class="math">$$\eta = 100 \times \frac{P \times M}{\rho \times Q_{elec}}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">\eta</span> = Fan efficiency (%)</li>
-<li><span class="math">P</span> = Static Fan Pressure</li>
-<li><span class="math">M</span> = Mass flow of air/gas</li>
-<li><span class="math">\rho</span> = density of air/gas</li>
-<li><span class="math">Q_{elec}</span> = Electrical power input</li>
+<li><span class="math">$\eta$</span> = Fan efficiency (%)</li>
+<li><span class="math">$P$</span> = Static Fan Pressure</li>
+<li><span class="math">$M$</span> = Mass flow of air/gas</li>
+<li><span class="math">$\rho$</span> = density of air/gas</li>
+<li><span class="math">$Q_{elec}$</span> = Electrical power input</li>
 </ul>
 <p>In CAS terms:</p>
 <div class="math">
-<p><span class="math">.efficiency.use = \frac {(.c1out.prop.pres.use - .c1in.prop.press.use) \times .c1out.massFlow.use}{.c1out.prop.density.use \times .c2in.energyFlow.use}</span></p>
+<p><span class="math">$$.efficiency.use = \frac {(.c1out.prop.pres.use - .c1in.prop.press.use) \times .c1out.massFlow.use}{.c1out.prop.density.use \times .c2in.energyFlow.use}$$</span></p>
 </div><p><strong>Current Load</strong></p>
 <div class="math">
-<p><span class="math">I_{PM} = \frac{I_{actual}}{I_{max}} \times 100 \%</span></p>
+<p><span class="math">$$I_{PM} = \frac{I_{actual}}{I_{max}} \times 100 \%$$</span></p>
 </div><p>Where</p>
 <ul class="simple">
-<li><span class="math">I_{actual}</span> = Actual Fan Current (A)</li>
-<li><span class="math">I_{max}</span> = Max Fan Current (A)</li>
+<li><span class="math">$I_{actual}$</span> = Actual Fan Current (A)</li>
+<li><span class="math">$I_{max}$</span> = Max Fan Current (A)</li>
 </ul>
 <p>In CAS Terms:</p>
 <div class="math">
-<p><span class="math">current\_pm.percentage = 100.0 * current\_pm.use / current\_pm.max</span></p>
+<p><span class="math">$$current\_pm.percentage = 100.0 * current\_pm.use / current\_pm.max$$</span></p>
 </div></div>

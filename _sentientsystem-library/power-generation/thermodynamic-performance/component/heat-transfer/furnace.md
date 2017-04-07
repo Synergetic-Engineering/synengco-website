@@ -32,8 +32,8 @@ description: Furnace component
 <h2>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline"></a></h2>
 <p>Furnace Heat Transfer</p>
 <div class="math">
-<p><span class="math">furnace \ heat \ transfer = energy \ out - energy \ in</span></p>
+<p><span class="math">$$furnace \ heat \ transfer = energy \ out - energy \ in$$</span></p>
 </div><p>Heat Rise</p>
 <div class="math">
-<p><span class="math">heat \ rise = \frac{furnace \ heat \ transfer}{net \ heat \ out}</span></p>
+<p><span class="math">$$heat \ rise = \frac{furnace \ heat \ transfer}{net \ heat \ out}$$</span></p>
 </div></div>
