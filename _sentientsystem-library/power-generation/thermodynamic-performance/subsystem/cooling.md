@@ -32,9 +32,3 @@ description: Cooling water subsystem
 </table>
 <p>Note:  Fan Power to CW Flow ratio is only relevant if forced draft cooling tower.</p>
 </div>
-
-
-
-<div class="section" id="calculations">
-<h2>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline"></a></h2>
-</div>
