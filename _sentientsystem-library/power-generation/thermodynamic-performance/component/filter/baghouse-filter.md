@@ -40,5 +40,3 @@ description: Baghouse filter component
 <div class="math">
 <p><span class="math">$$bh.c1.dP.use = bh.c1in.prop.pres.use - bh.c1out.prop.press.use$$</span></p>
 </div></div>
-
-<p>Under construction.</p>
