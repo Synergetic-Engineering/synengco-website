@@ -36,7 +36,13 @@
 						{% assign level = hierarchy | size | minus: 2 %}
 						{% if level > thispagelevel and prettyurl contains thispagepurl %}
 							<div style="margin-left: {{ level | minus: thispagelevel | minus: 1 | times: 0.5 }}cm">
-                                <h{{level | minus: thispagelevel}}><a href="{{ prettyurl }}">{{ p.title }}</a></h{{level | minus: thispagelevel}}>
+                                <h{{level | minus: thispagelevel}}>
+                                    <a href="{{ prettyurl }}">
+                                        {% if p.layout == "library" %}<span class="icon small fa-cubes"></span>{% endif %}
+                                        {% if p.layout == "performance-calc" %}<span class="icon fa-cube"></span>{% endif %}
+                                        {{ p.title }}
+                                    </a>
+                                </h{{level | minus: thispagelevel}}>
                             </div>
 							{% comment %}<p>{{p.description}}</p>{% endcomment %}
 						{% endif %}
