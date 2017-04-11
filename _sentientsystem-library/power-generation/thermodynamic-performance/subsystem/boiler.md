@@ -64,23 +64,13 @@ children:
 <p><span class="math">$$Q_{blrout} = Q_{MS} + Q_{HRH} - Q_{CRH}- Q_{FW} - Q_{SHS} - Q_{RHS}$$</span></p>
 </div><p>Where:</p>
 <ul class="simple">
-<li><span class="math">$Q_{MS}$</span> = Heat Flow from Main Steam (kW) (blr.ms_1.energyFlow.use + blr.ms_r.energyFlow.use)</li>
-<li><span class="math">$Q_{HRH}$</span> = Heat Flow to Hot Reheat (kW) (blr.hrh_1.energyFlow.use + blr.hrh_r.energyFlow.use)</li>
-<li><span class="math">$Q_{CRH}$</span> = Heat Flow from Cold Reheat (kW) (blr.crh_1.energyFlow.use + blr.crh_r.energyFlow.use)</li>
-<li><span class="math">$Q_{FW}$</span> = Heat Flow from Feedwater (kW) (blr.fw_1.energyFlow.use + blr.fw_r.energyFlow.use)</li>
+<li><span class="math">$Q_{MS}$</span> = Heat Flow from Main Steam (kW) (blr.ms_l.energyFlow.use + blr.ms_r.energyFlow.use)</li>
+<li><span class="math">$Q_{HRH}$</span> = Heat Flow to Hot Reheat (kW) (blr.hrh_l.energyFlow.use + blr.hrh_r.energyFlow.use)</li>
+<li><span class="math">$Q_{CRH}$</span> = Heat Flow from Cold Reheat (kW) (blr.crh_l.energyFlow.use + blr.crh_r.energyFlow.use)</li>
+<li><span class="math">$Q_{FW}$</span> = Heat Flow from Feedwater (kW) (blr.fw_l.energyFlow.use + blr.fw_r.energyFlow.use)</li>
 <li><span class="math">$Q_{SHS}$</span> = Heat Flow from Superheat Sprays (kW) blr.shs.energyFlow.use</li>
 <li><span class="math">$Q_{RHS}$</span> = Heat Flow from Reheat Sprays (kW) blr.rhs.energyFlow.use</li>
 </ul>
-<p>The sent out efficiency as calculated is:</p>
-<div class="math">
-<p><span class="math">$$\eta _{SO} = Q_{SO} \times \frac{\eta blr}{Qblrout}$$</span></p>
-</div><p>Where:</p>
-<ul class="simple">
-<li><span class="math">$Q_{SO}$</span> = Sent Out Power.</li>
-</ul>
-<p>In CAS terms:</p>
-<div class="math">
-<p><span class="math">$$efficiency.net.use = Q_{SO} \times \frac{blr.efficiency\_losses.use}{blr.netheatoutput.use}$$</span></p>
 </div><p><strong>Efficiency</strong></p>
 <div class="math">
 <p><span class="math">$$boiler \ efficiency = \frac{net \ heat \ output}{fuel energy} \times 100\%$$</span></p>
