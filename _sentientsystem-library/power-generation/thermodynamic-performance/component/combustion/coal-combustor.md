@@ -18,6 +18,7 @@ description: Coal combustor component
 <tr class="row-odd"><td><strong>Calculation</strong></td>
 <td><strong>Reference</strong></td>
 <td><strong>Output Tags</strong></td>
+</tr>
 </tbody>
 </table>
 </div>
