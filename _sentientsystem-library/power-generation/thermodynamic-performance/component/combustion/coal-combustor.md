@@ -18,11 +18,6 @@ description: Coal combustor component
 <tr class="row-odd"><td><strong>Calculation</strong></td>
 <td><strong>Reference</strong></td>
 <td><strong>Output Tags</strong></td>
-</tr>
-<tr class="row-even"><td>Proportional Heat Pickup</td>
-<td>&nbsp;</td>
-<td>.heatRise.use</td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -30,10 +25,4 @@ description: Coal combustor component
 
 <div class="section" id="calculations">
 <h2>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline"></a></h2>
-<p>Furnace Heat Transfer</p>
-<div class="math">
-<p><span class="math">$$combustor \ heat \ transfer = energy \ out - energy \ in$$</span></p>
-</div><p>Heat Rise</p>
-<div class="math">
-<p><span class="math">$$heat \ rise = \frac{combustor \ heat \ transfer}{net \ heat \ out}$$</span></p>
-</div></div>
+</div>
