@@ -78,7 +78,7 @@ Note that the bauman factor is usually 1 as mentioned in the reference.</p>
 </div><p>Where:</p>
 <ul class="simple">
 <li><span class="math">$\Delta P$</span> = Delta pressure (kPa)</li>
-<li><span class="math">$P_{i}$</span> = Inlet statge pressure (kPa)</li>
+<li><span class="math">$P_{i}$</span> = Inlet stage pressure (kPa)</li>
 <li><span class="math">$P_{o}$</span> = Outlet stage pressure (kPa)</li>
 </ul>
 <p>In CAS terms:</p>
