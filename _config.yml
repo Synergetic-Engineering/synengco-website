@@ -15,7 +15,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://synengco.com" # the base hostname & protocol for your site
 author:
 street_address: 28E Gladstone Rd
-city: Brisbane
+city: Highgate Hill
 state: QLD
 zip_code: 4101
 country: Australia
