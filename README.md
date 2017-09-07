@@ -15,8 +15,26 @@ bundle exec jekyll serve
 and view at http://localhost:4000
 
 
-## Get a list of pages
+## Get a list of pages and submit the form to activate
 
 ```python
-for root in [root for root, dirs, files in os.walk('.') if 'index.html' in files]: print 'synengco.com'+root[1:].replace('\\','/')
+import os
+import requests
+
+built_site_dir = './_site'
+page_urls = []
+for root, dirs, files in os.walk(built_site_dir):
+    if 'index.html' in files:
+        page_urls.append('synengco.com'+root.replace(built_site_dir,'').replace('\\','/'))
+
+for url in page_urls:
+    r = requests.post(
+        'https://formspree.io/info@synengco.com',
+        data = {'name': 'samtesting', 'message': 'test'},
+        headers = {
+            'Referer': url,
+            'X_REQUESTED_WITH': 'xmlhttprequest'
+            }
+        )
+    assert r.status_code == 200, url
 ```
